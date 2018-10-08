@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import React, { Component } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 import App from './App'
 
 class AppContainer extends Component {
