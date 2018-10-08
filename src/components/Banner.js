@@ -8,22 +8,25 @@ class Banner extends Component {
       <Parallax.Layer offset={0} speed={0.5}>
         <div className='ui container center aligned header'>
           <h1>Hi, Im Victoria.</h1>
-          <a href="https://github.com/victoria-huang" target="_blank">
+          <a href="https://github.com/victoria-huang" target="_blank" rel="noopener noreferrer">
             <i className="large circular github link icon"></i>
           </a>&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/in/victoriah92/" target="_blank">
+          <a href="https://www.linkedin.com/in/victoriah92/" target="_blank" rel="noopener noreferrer">
             <i className="large circular linkedin link icon"></i>
           </a>&nbsp;&nbsp;
-          <a href="https://medium.com/@victoria.huang" target="_blank">
+          <a href="https://medium.com/@victoria.huang" target="_blank" rel="noopener noreferrer">
             <i className="large circular medium link icon"></i>
           </a>&nbsp;&nbsp;
-          <a href="https://www.victoriahuang.me" target="_blank">
+          <a href="https://www.victoriahuang.me" target="_blank" rel="noopener noreferrer">
             <i className="large circular user circle link icon"></i>
           </a>
         </div>
       </Parallax.Layer>
       <Parallax.Layer offset={1} speed={0.5}>
-        Hi
+        Hi from page 1
+      </Parallax.Layer>
+      <Parallax.Layer offset={2} speed={0.5}>
+        Hi from page 2
       </Parallax.Layer>
       </Fragment>
     )

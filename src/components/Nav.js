@@ -3,7 +3,9 @@ import React, { Fragment } from 'react'
 const Nav = (props) => {
   return (
     <Fragment>
-      <div onClick={() => props.scroll(1)}>Link 1</div>
+      <a onClick={ () => props.scroll(1) }>Link 1</a>
+      &nbsp; | &nbsp;
+      <a onClick={ () => props.scroll(2) }>Link 2</a>
     </Fragment>
   )
 }

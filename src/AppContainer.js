@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Parallax from 'react-springy-parallax'
 import App from './App'
-import Nav from './components/Nav'
 
 class AppContainer extends Component {
   constructor() {
@@ -17,9 +16,8 @@ class AppContainer extends Component {
 
   render() {
     return (
-      <Parallax ref={ this.setParallax } pages={ 2 }>
-        <Nav scroll={ this.scroll } />
-        <App />
+      <Parallax ref={ this.setParallax } pages={ 3 }>
+        <App scroll={ this.scroll } />
       </Parallax>
     );
   }
