@@ -3,9 +3,9 @@ import { ParallaxLayer } from 'react-spring'
 
 const Banner = (props) => {
   return (
-    <ParallaxLayer offset={ 0.5 } speed={ 0.5 }>
-      <div className='ui container center aligned header'>
-        <h1>Hi, I'm Victoria.</h1>
+    <ParallaxLayer offset={ 0.5 } speed={ 0.5 } style={{ backgroundColor: '#243B4A' }}>
+      <div className='center container'>
+        <h1 style={{ color: '#FFFFFF' }}>Victoria Huang</h1>
       </div>
     </ParallaxLayer>
   )
