@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaMedium, FaEnvelopeSquare } from 'react-icons/fa
 
 const About = (props) => {
   return (
-    <ParallaxLayer offset={ 1.5 } speed={ 0.5 }>
+    <ParallaxLayer offset={ 1.5 } speed={ -0.1 }>
       <div className='center container'>
         <hr />
         <p>Victoria Huang is a full-stack web developer and pharmacist based in New York City.</p>
