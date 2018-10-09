@@ -6,9 +6,9 @@ const About = (props) => {
   return (
     <ParallaxLayer offset={ 1.5 } speed={ -0.1 }>
       <div className='center container'>
-        <hr />
+        <hr className='white-hr' />
         <p>Victoria Huang is a full-stack web developer and pharmacist based in New York City.</p>
-        <hr />
+        <hr className='white-hr' />
         <br />
         <a href="https://github.com/victoria-huang" target="_blank" rel="noopener noreferrer">
           <FaGithub size={ 40 } />

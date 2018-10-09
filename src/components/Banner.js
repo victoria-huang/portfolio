@@ -1,11 +1,25 @@
 import React, { Component } from 'react'
 import { ParallaxLayer, Trail, config } from 'react-spring'
+import sr from './ScrollReveal'
 
 const name = "Designer Developer Pharmacist".split(' ')
-
+// https://www.reddit.com/r/reactjs/comments/8b3l3e/x_why_react_needed_yet_another_animation_library/
 class Banner extends Component {
   state = {
     mouseOver: false
+  }
+
+  componentDidMount = () => {
+    const config = {
+      origin: 'left',
+      duration: 800,
+      delay: 100,
+      distance: '500px',
+      scale: 1,
+      easing: 'ease',
+    }
+
+    sr.reveal(this.refs.header, config)
   }
 
   handleMouseEnter = () => {
@@ -24,9 +38,10 @@ class Banner extends Component {
     return (
       <ParallaxLayer offset={ 0.4 } speed={ 0.5 }>
         <div className='center container'>
-          <hr />
+          <hr className='white-hr'/>
           <h1
-            className='header'
+            // className='header'
+            ref='header'
             onMouseEnter={ this.handleMouseEnter }
             onMouseLeave={ this.handleMouseLeave }
             onClick={ () => this.props.scroll(1) }
@@ -43,7 +58,7 @@ class Banner extends Component {
           >
             W h o &nbsp; I &nbsp; A m
           </h1>
-          <hr />
+          <hr className='white-hr' />
           <Trail
             keys={name}
             from={{ opacity: 0, transform: 'translate3d(0px,0,0)' }}
