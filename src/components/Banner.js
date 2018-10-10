@@ -36,8 +36,8 @@ class Banner extends Component {
 
   render() {
     return (
-      <ParallaxLayer offset={ 0.4 } speed={ 0.5 }>
-        <div className='center container'>
+      <ParallaxLayer offset={ 0 } speed={ 0.5 }>
+        <div className='center'>
           <hr className='white-hr'/>
           <h1
             // className='header'

@@ -1,30 +1,28 @@
 import React from 'react'
 import { ParallaxLayer } from 'react-spring'
-import { FaGithub, FaLinkedin, FaMedium, FaEnvelopeSquare } from 'react-icons/fa'
 
 const About = (props) => {
   return (
-    <ParallaxLayer offset={ 1.5 } speed={ -0.1 }>
-      <div className='center container'>
-        <hr className='white-hr' />
-        <p>Victoria Huang is a full-stack web developer and pharmacist based in New York City.</p>
-        <hr className='white-hr' />
-        <br />
-        <a href="https://github.com/victoria-huang" target="_blank" rel="noopener noreferrer">
-          <FaGithub size={ 40 } />
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/victoriah92/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin size={ 40 } />
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://medium.com/@victoria.huang" target="_blank" rel="noopener noreferrer">
-          <FaMedium size={ 40 } />
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="mailto:vctrah@gmail.com">
-          <FaEnvelopeSquare size={ 40 } />
-        </a>
+    <ParallaxLayer offset={ 1 } speed={ -0.1 }>
+      <div className='center'>
+        <div className='row-container'>
+          <div className='column-left'>
+            <h1>Hi, I'm Victoria!</h1>
+            <p>
+              I am a full-stack web developer and pharmacist based in New York City.
+              I'm passionate about utilizing my skills to create beautiful and meaningful
+              projects.
+            </p>
+            <hr className='black-hr' />
+            <p>
+              React, React Native, Redux, Node, Express, JavaScript, Ruby, Rails, Java, RSpec, SQL,
+              PostgreSQL, HTML, CSS, Canvas, Bootstrap, Semantic, Git, Heroku
+            </p>
+          </div>
+          <div className='column-right'>
+            <img src='assets/profile.jpg' height='400vh' width='300vw' alt='profile' />
+          </div>
+        </div>
       </div>
     </ParallaxLayer>
   )
