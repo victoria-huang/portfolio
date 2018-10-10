@@ -46,19 +46,19 @@ p {
 }
 
 .column-right {
-  border-right: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-right: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   width: 65%;
   padding: 2%;
-  background-color: white;
+  background-color: rgba(213, 231, 205, 0.45);
   text-align: left;
 }
 
 .column-left {
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   width: 35%;
   padding: 2%;
   display: block;

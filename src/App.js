@@ -5,7 +5,7 @@ import ProjectContainer from './containers/ProjectContainer'
 import { ParallaxLayer } from 'react-spring'
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
-
+// #243B4A
 class App extends Component {
   render() {
     const styles = {
@@ -14,8 +14,8 @@ class App extends Component {
 
     return (
       <Fragment>
-        <ParallaxLayer offset={0} speed={0.5} factor={1.5} style={{ backgroundColor: '#243B4A' }} />
-        <ParallaxLayer offset={1} speed={0.5} factor={1.5} style={{ backgroundColor: '#805E73' }} />
+        <ParallaxLayer offset={0} speed={0.5} factor={1.5} style={{ backgroundColor: '#2a4e57' }} />
+        <ParallaxLayer offset={1} speed={0.5} factor={1.5} style={{ backgroundColor: '#cea499' }} />
         <ParallaxLayer offset={2} speed={0.5} factor={1.5} style={{ backgroundColor: '#87BCDE' }} />
 
         <Banner style={styles} scroll={ this.props.scroll } />
