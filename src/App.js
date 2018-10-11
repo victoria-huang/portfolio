@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Banner from './components/Banner'
-import About from './components/About'
+import AboutContainer from './containers/AboutContainer'
 import ProjectContainer from './containers/ProjectContainer'
 import { ParallaxLayer } from 'react-spring'
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -19,7 +19,7 @@ class App extends Component {
         <ParallaxLayer offset={2} speed={0.5} factor={1.5} style={{ backgroundColor: '#87BCDE' }} />
 
         <Banner style={styles} scroll={ this.props.scroll } />
-        <About style={styles} />
+        <AboutContainer style={styles} />
         <ProjectContainer style={styles} />
       </Fragment>
     );
