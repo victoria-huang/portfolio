@@ -46,9 +46,9 @@ p {
 }
 
 .column-right {
-  border-right: 3px solid #ffffff;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #525252;
+  border-top: 3px solid #525252;
+  border-bottom: 3px solid #525252;
   width: 65%;
   padding: 2%;
   background-color: rgba(213, 231, 205, 0.45);
@@ -56,9 +56,9 @@ p {
 }
 
 .column-left {
-  border-left: 3px solid #ffffff;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #525252;
+  border-top: 3px solid #525252;
+  border-bottom: 3px solid #525252;
   width: 35%;
   padding: 2%;
   display: block;

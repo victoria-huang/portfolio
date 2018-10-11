@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const Nav = (props) => {
   return (
-    <nav role="navigation">
+    <nav>
       <div id="menuToggle">
         <input type="checkbox" />
           <span></span>

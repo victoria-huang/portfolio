@@ -12,7 +12,7 @@ const About = (props) => {
           <div className='column-right'>
             <h1>Hi, I'm Victoria!</h1>
             <p>
-              I am a full-stack web developer and pharmacist based in New York City.
+              I'm a full-stack web developer and pharmacist based in New York City.
               I'm passionate about utilizing my skills to create beautiful and meaningful
               projects.
             </p>

@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Fragment>
         <ParallaxLayer offset={0} speed={0.5} factor={1.5} style={{ backgroundColor: '#2a4e57' }} />
-        <ParallaxLayer offset={1} speed={0.5} factor={1.5} style={{ backgroundColor: '#cea499' }} />
+        <ParallaxLayer offset={1} speed={0.5} factor={1.5} style={{ backgroundColor: '#ecc3a2' }} />
         <ParallaxLayer offset={2} speed={0.5} factor={1.5} style={{ backgroundColor: '#87BCDE' }} />
 
         <Banner style={styles} scroll={ this.props.scroll } />

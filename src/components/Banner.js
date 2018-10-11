@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { ParallaxLayer, Trail, config } from 'react-spring'
 import sr from './ScrollReveal'
 
-const name = "Designer Developer Pharmacist".split(' ')
 // https://www.reddit.com/r/reactjs/comments/8b3l3e/x_why_react_needed_yet_another_animation_library/
 class Banner extends Component {
   state = {
@@ -35,6 +34,8 @@ class Banner extends Component {
   }
 
   render() {
+    const name = "Developer Designer Pharmacist".split(' ')
+
     return (
       <ParallaxLayer offset={ 0 } speed={ 0.5 }>
         <div className='center'>
