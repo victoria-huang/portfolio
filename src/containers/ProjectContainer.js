@@ -1,5 +1,5 @@
 import React from 'react'
-import { ParallaxLayer } from 'react-spring'
+import { animated } from 'react-spring'
 import Slider from 'react-slick'
 import Project from '../components/Project'
 
@@ -15,8 +15,8 @@ const settings = {
 
 const ProjectContainer = (props) => {
   return (
-    <ParallaxLayer offset={ 2 } speed={ 0.5 }>
-      <div className='center'>
+    <animated.div className='mainRoute' style={{ ...props.style, background: `#C7C7C7` }}>
+      <div className='mainRouteItem'>
         <Slider {...settings}>
           <Project />
           <Project />
@@ -25,7 +25,7 @@ const ProjectContainer = (props) => {
           <Project />
         </Slider>
       </div>
-    </ParallaxLayer>
+    </animated.div>
   )
 }
 

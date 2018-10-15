@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Nav = (props) => {
   return (
@@ -10,9 +11,9 @@ const Nav = (props) => {
           <span></span>
 
         <ul id="menu">
-          <a onClick={ () => props.scroll(0) }><li>Hello</li></a>
-          <a onClick={ () => props.scroll(1) }><li>About</li></a>
-          <a onClick={ () => props.scroll(2) }><li>Portfolio</li></a>
+          <Link to='/'><li>Hello</li></Link>
+          <Link to='/about'><li>About</li></Link>
+          <Link to='/projects'><li>Portfolio</li></Link>
         </ul>
       </div>
     </nav>

@@ -1,26 +1,26 @@
 import React from 'react'
-import { ParallaxLayer } from 'react-spring'
+import { animated } from 'react-spring'
 import { FaAngleDown } from 'react-icons/fa'
 import Slider from 'react-slick'
 import About from '../components/About'
 import Resume from '../components/Resume'
 
-const settings = { dots: false }
+const settings = { dots: true }
 
 const AboutContainer = (props) => {
   return (
-    <ParallaxLayer offset={ 1 } speed={ -0.1 }>
-      <div className='center'>
+    <animated.div style={{ ...props.style, background: `#C7C7C7` }}>
+      <div className='mainRouteItem'>
         <Slider {...settings}>
           <About />
           <Resume />
         </Slider>
 
 
-          <FaAngleDown size={ 30 } onClick={ () => props.scroll(2) } />
+          <FaAngleDown size={ 30 } onClick={ () => props.history.push('/projects') } />
 
       </div>
-    </ParallaxLayer>
+    </animated.div>
   )
 }
 
