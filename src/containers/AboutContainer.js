@@ -1,10 +1,11 @@
 import React from 'react'
 import { ParallaxLayer } from 'react-spring'
+import { FaAngleDown } from 'react-icons/fa'
 import Slider from 'react-slick'
 import About from '../components/About'
 import Resume from '../components/Resume'
 
-const settings = { dots: true }
+const settings = { dots: false }
 
 const AboutContainer = (props) => {
   return (
@@ -14,6 +15,10 @@ const AboutContainer = (props) => {
           <About />
           <Resume />
         </Slider>
+
+
+          <FaAngleDown size={ 30 } onClick={ () => props.scroll(2) } />
+
       </div>
     </ParallaxLayer>
   )
