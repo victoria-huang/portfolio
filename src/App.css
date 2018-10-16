@@ -12,11 +12,20 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 8vmin;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 p {
-  font-size: 2.3vmin;
+  font-size: 1.2em;
+}
+
+.emphasize {
+  color: orange;
+  letter-spacing: 2.5px;
 }
 
 .white-hr {
@@ -34,39 +43,52 @@ p {
 .row-container {
   display: flex;
   padding: 5%;
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
-.column-right {
-  border-right: 3px solid #525252;
+.column-left {
+  /* border-right: 3px solid #525252;
   border-top: 3px solid #525252;
-  border-bottom: 3px solid #525252;
+  border-bottom: 3px solid #525252; */
   width: 65%;
   padding: 2%;
-  background-color: rgba(213, 231, 205, 0.45);
+  line-height: 1.8;
+  /* background-color: rgba(0, 0, 0, 0.65); */
   text-align: left;
 }
 
-.column-left {
-  border-left: 3px solid #525252;
+.column-right {
+  /* border-left: 3px solid #525252;
   border-top: 3px solid #525252;
-  border-bottom: 3px solid #525252;
+  border-bottom: 3px solid #525252; */
   width: 35%;
   padding: 2%;
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
 }
 
-.column-left img {
+.bg {
+  background-image: url('./cover.jpg');
+  background-size: cover;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
+
+/* .column-left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 
 /* .center {
   width: 90%;
@@ -247,13 +269,7 @@ a:hover {
   transform: none;
 }
 
-
-
-
-
-
-
-
+/*****************************************************************************/
 
 /* #root {
   font-family: 'Kanit', sans-serif;
@@ -296,7 +312,7 @@ a:hover {
 
 .content {
   flex: 1;
-  font-size: 50px;
+  /* font-size: 50px; */
   color: white;
   height: 100%;
 }
@@ -326,17 +342,6 @@ a:hover {
 .navItemUltra {
   margin-top: 64px;
 } */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* .banner-container {

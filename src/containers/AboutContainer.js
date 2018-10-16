@@ -9,15 +9,15 @@ const settings = { dots: true }
 
 const AboutContainer = (props) => {
   return (
-    <animated.div style={{ ...props.style, background: `#C7C7C7` }}>
-      <div className='mainRouteItem'>
-        <Slider {...settings}>
+    <animated.div className='mainRoute bg' style={{ ...props.style }}>
+      <div className='mainRouteItem layer'>
+        {/*<Slider {...settings}>*/}
           <About />
-          <Resume />
-        </Slider>
+          {/*<Resume />*/}
+        {/*</Slider>*/}
 
 
-          <FaAngleDown size={ 30 } onClick={ () => props.history.push('/projects') } />
+        <FaAngleDown size={ 50 } onClick={ () => props.history.push('/projects') } />
 
       </div>
     </animated.div>

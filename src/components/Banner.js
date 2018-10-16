@@ -8,7 +8,6 @@ class Banner extends Component {
   }
 
   componentDidMount = () => {
-    console.log('mount')
     const config = {
       origin: 'left',
       duration: 800,

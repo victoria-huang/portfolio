@@ -17,13 +17,13 @@ const ProjectContainer = (props) => {
   return (
     <animated.div className='mainRoute' style={{ ...props.style, background: `#C7C7C7` }}>
       <div className='mainRouteItem'>
-        <Slider {...settings}>
+        {/*<Slider {...settings}>*/}
           <Project />
           <Project />
           <Project />
           <Project />
           <Project />
-        </Slider>
+        {/*</Slider>*/}
       </div>
     </animated.div>
   )
