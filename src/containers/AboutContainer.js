@@ -18,7 +18,7 @@ const AboutContainer = (props) => {
         {/*</Slider>*/}
 
 
-      <Link to='/projects'><FaAngleDown size={ 50 } /></Link>
+      <Link to='/portfolio'><FaAngleDown size={ 50 } /></Link>
 
       </div>
     </animated.div>

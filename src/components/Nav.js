@@ -13,7 +13,7 @@ const Nav = (props) => {
         <ul id="menu">
           <Link to='/'><li>Hello</li></Link>
           <Link to='/about'><li>About</li></Link>
-          <Link to='/projects'><li>Portfolio</li></Link>
+          <Link to='/portfolio'><li>Portfolio</li></Link>
         </ul>
       </div>
     </nav>

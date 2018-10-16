@@ -27,7 +27,7 @@ class App extends Component {
                     <Switch location={location}>
                       <Route exact path="/" render={props => <Banner { ...props } style={style} /> } />
                       <Route path="/about" render={props => <AboutContainer { ...props } style={style} /> } />
-                      <Route path="/projects" render={props => <ProjectContainer { ...props } style={style} /> } />
+                      <Route path="/portfolio" render={props => <ProjectContainer { ...props } /> } />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
                   )}

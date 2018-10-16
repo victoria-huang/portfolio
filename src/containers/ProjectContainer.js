@@ -15,7 +15,7 @@ const settings = {
 
 const ProjectContainer = (props) => {
   return (
-    <animated.div className='mainRoute' style={{ ...props.style, background: `#C7C7C7` }}>
+    <animated.div className='mainRoute' style={{ ...props.style, background: `#000000` }}>
       <div className='mainRouteItem'>
         {/*<Slider {...settings}>*/}
           <Project />
