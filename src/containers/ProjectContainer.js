@@ -27,7 +27,10 @@ const ProjectContainer = (props) => {
         <Parallax horizontal pages={5}>
           <div className='container'>
             <ParallaxLayer offset={0} speed={0.2}>
-              <Project />
+              <Project
+                name='YouRx'
+
+              />
             </ParallaxLayer>
 
             <ParallaxLayer offset={1} speed={0.2}>
@@ -41,7 +44,7 @@ const ProjectContainer = (props) => {
             <ParallaxLayer offset={3} speed={0.2}>
               <Project />
             </ParallaxLayer>
-            
+
             <ParallaxLayer offset={4} speed={0.2}>
               <Project />
             </ParallaxLayer>
