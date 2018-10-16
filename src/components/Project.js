@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = (props) => {
   return (
-    <div>
+    <div className='column'>
       project here
       project here
       project here
