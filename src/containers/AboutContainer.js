@@ -17,8 +17,9 @@ const AboutContainer = (props) => {
           {/*<Resume />*/}
         {/*</Slider>*/}
 
-
-      <Link to='/portfolio'><FaAngleDown size={ 50 } /></Link>
+      <div className='arrow bottom'>
+        <Link to='/portfolio'><FaAngleDown size={ 50 } /></Link>
+      </div>
 
       </div>
     </animated.div>

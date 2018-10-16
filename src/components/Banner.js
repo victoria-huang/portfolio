@@ -10,7 +10,7 @@ class Banner extends Component {
   componentDidMount = () => {
     const config = {
       origin: 'left',
-      duration: 800,
+      duration: 1000,
       delay: 100,
       distance: '500px',
       scale: 1,
@@ -38,9 +38,9 @@ class Banner extends Component {
     return (
         <animated.div className='mainRoute' style={{ ...this.props.style, background: `#1B1B1C` }}>
           <div className='mainRouteItem'>
-            <hr className='white-hr'/>
+            <hr className='white-hr' style={{ width: '900px' }} />
             <h1
-              // className='header'
+              className='header'
               ref='header'
               onMouseEnter={ this.handleMouseEnter }
               onMouseLeave={ this.handleMouseLeave }
@@ -58,14 +58,14 @@ class Banner extends Component {
             >
               W h o &nbsp; I &nbsp; A m
             </h1>
-            <hr className='white-hr' />
+            <hr className='white-hr' style={{ width: '900px' }} />
             <Trail
               keys={name}
               from={{ opacity: 0, transform: 'translate3d(0px,0,0)' }}
               to={{ opacity: 1, transform: 'translate3d(5px,0,0)' }}
               config={ config.molasses }
               >
-              { name.map(letter => props => <div style={props}><p style={{ color: '#FFFFFF', fontSize: '3vmin' }}>{ letter }</p></div>) }
+              { name.map(letter => props => <div style={props}><p style={{ color: '#FFFFFF', fontSize: '2.5em' }}>{ letter }</p></div>) }
             </Trail>
           </div>
         </animated.div>
