@@ -47,6 +47,23 @@ p {
   margin: auto;
 }
 
+.container {
+  display: flex;
+  /* padding: 2.5%; */
+  width: 90%;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.container-item {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  transform: perspective(1px) translateY(-50%);
+  top: 50%;
+}
+
 .column-left {
   /* border-right: 3px solid #525252;
   border-top: 3px solid #525252;
@@ -56,11 +73,6 @@ p {
   line-height: 1.8;
   /* background-color: rgba(0, 0, 0, 0.65); */
   text-align: left;
-}
-
-.column {
-  width: 20%;
-  text-align: center;
 }
 
 .column-right {

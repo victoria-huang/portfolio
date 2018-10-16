@@ -2,29 +2,8 @@ import React from 'react'
 
 const Project = (props) => {
   return (
-    <div className='column'>
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
-      project here
+    <div className='container-item'>
+      <div style={{height: '300px', border: '5px solid white'}} />
     </div>
   )
 }

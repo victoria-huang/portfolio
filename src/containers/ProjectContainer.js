@@ -2,18 +2,18 @@ import React from 'react'
 import { animated, Parallax, ParallaxLayer } from 'react-spring'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import Project from '../components/Project'
 
-const settings = {
-      centerMode: true,
-      infinite: true,
-      centerPadding: '60px',
-      slidesToShow: 1,
-      speed: 500,
-      swipeToSlide: true,
-      dots: true,
-    }
+// const settings = {
+//       centerMode: true,
+//       infinite: true,
+//       centerPadding: '60px',
+//       slidesToShow: 1,
+//       speed: 500,
+//       swipeToSlide: true,
+//       dots: true,
+//     }
 
 const ProjectContainer = (props) => {
   return (
@@ -25,19 +25,23 @@ const ProjectContainer = (props) => {
         {/*<Slider {...settings}>*/}
 
         <Parallax horizontal pages={5}>
-          <div className='row-container'>
+          <div className='container'>
             <ParallaxLayer offset={0} speed={0.2}>
               <Project />
             </ParallaxLayer>
+
             <ParallaxLayer offset={1} speed={0.2}>
               <Project />
             </ParallaxLayer>
+
             <ParallaxLayer offset={2} speed={0.2}>
               <Project />
             </ParallaxLayer>
+
             <ParallaxLayer offset={3} speed={0.2}>
               <Project />
             </ParallaxLayer>
+            
             <ParallaxLayer offset={4} speed={0.2}>
               <Project />
             </ParallaxLayer>
