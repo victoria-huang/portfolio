@@ -1,9 +1,11 @@
 import React from 'react'
-import { animated, Parallax, ParallaxLayer } from 'react-spring'
+import { animated, Parallax } from 'react-spring'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 // import Slider from 'react-slick'
 import Project from '../components/Project'
+import { allProjects } from '../projects'
+import v4 from 'uuid'
 
 // const settings = {
 //       centerMode: true,
@@ -16,6 +18,10 @@ import Project from '../components/Project'
 //     }
 
 const ProjectContainer = (props) => {
+  const projects = allProjects.map( (project, idx) =>
+    <Project key={ v4() } { ...project } offset={ idx }/>
+  )
+
   return (
     <animated.div className='subRoute' style={{ ...props.style, background: `#222222` }}>
       <div className='mainRouteItem'>
@@ -24,30 +30,9 @@ const ProjectContainer = (props) => {
         </div>
         {/*<Slider {...settings}>*/}
 
-        <Parallax horizontal pages={5}>
+        <Parallax horizontal pages={ projects.length }>
           <div className='container'>
-            <ParallaxLayer offset={0} speed={0.2}>
-              <Project
-                name='YouRx'
-
-              />
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={1} speed={0.2}>
-              <Project />
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={2} speed={0.2}>
-              <Project />
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={3} speed={0.2}>
-              <Project />
-            </ParallaxLayer>
-
-            <ParallaxLayer offset={4} speed={0.2}>
-              <Project />
-            </ParallaxLayer>
+              { projects }
           </div>
         </Parallax>
 
