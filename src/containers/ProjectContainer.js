@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { animated, Parallax } from 'react-spring'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -17,33 +17,71 @@ import v4 from 'uuid'
 //       dots: true,
 //     }
 
-const ProjectContainer = (props) => {
-  const projects = allProjects.map( (project, idx) =>
-    <Project key={ v4() } { ...project } offset={ idx }/>
-  )
+class ProjectContainer extends Component {
+  constructor() {
+    super()
 
-  return (
-    <animated.div className='subRoute' style={{ ...props.style, background: `#222222` }}>
-      <div className='mainRouteItem'>
-        <div className='arrow top'>
-          <Link to='/about'><FaAngleUp size={ 50 } /></Link>
-        </div>
-        {/*<Slider {...settings}>*/}
+    this.parallax = null
+    this.setParallax = ref => { this.parallax = ref }
 
-        <Parallax horizontal pages={ projects.length }>
-          <div className='container'>
-              { projects }
+    this.state = {
+      active: 0
+    }
+  }
+
+  renderProjects = () => {
+    return allProjects.map( (project, idx) =>
+      <Project key={ v4() } { ...project } offset={ idx }/>
+    )
+  }
+
+  handleClick = (idx) => {
+    this.setState({
+      active: idx
+    })
+    this.parallax.scrollTo(idx)
+  }
+
+  renderNavDots = () => {
+    return allProjects.map( (project, idx) =>
+      <span
+        key={ v4() }
+        onClick = { () => this.handleClick(idx) }
+      >
+        <img src='assets/dot.png' className='navDot' alt='navigation dot' width={ this.state.active === idx ? '15px' : '10px' } height={ this.state.active === idx ? '15px' : '10px' } />
+      </span>
+    )
+  }
+
+  render () {
+    return (
+      <animated.div className='subRoute' style={{ ...this.props.style, background: `#333333` }}>
+        <div className='mainRouteItem'>
+          <div className='arrow top'>
+            <Link to='/about'><FaAngleUp size={ 50 } /></Link>
           </div>
-        </Parallax>
+          {/*<Slider {...settings}>*/}
 
-        {/*</Slider>*/}
+          <Parallax horizontal ref={ this.setParallax } pages={ allProjects.length }>
+            <div className='container'>
+              <div className='column right' />
+              { this.renderProjects() }
+            </div>
+          </Parallax>
 
-        <div className='arrow bottom'>
-          <Link to='/'><FaAngleDown size={ 50 } /></Link>
+          <div className='navDots'>
+            { this.renderNavDots() }
+          </div>
+
+          {/*</Slider>*/}
+
+          <div className='arrow bottom'>
+            <Link to='/'><FaAngleDown size={ 50 } /></Link>
+          </div>
         </div>
-      </div>
-    </animated.div>
-  )
+      </animated.div>
+    )
+  }
 }
 
 export default ProjectContainer

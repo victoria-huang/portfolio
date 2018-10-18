@@ -5,7 +5,7 @@ const Project = (props) => {
   return (
     <ParallaxLayer offset={ props.offset } speed={0.2}>
       <div className='container-item'>
-        <div style={{height: '400px', border: '5px solid white'}}>
+        <div>
           <h2>{ props.name }</h2>
           <img src={ props.image ?
             props.image
@@ -14,7 +14,7 @@ const Project = (props) => {
           } alt={ `${props.name} preview` } />
         </div>
 
-        
+
       </div>
     </ParallaxLayer>
   )

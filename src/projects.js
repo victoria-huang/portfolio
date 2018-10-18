@@ -1,6 +1,6 @@
 export const allProjects = [
   {
-    name: 'Flatiron Attendance App',
+    name: 'Flatiron Attendance Tracker',
     backendRepo: 'https://github.com/victoria-huang/attendance-bot',
     frontendRepo: '',
     url: '',
