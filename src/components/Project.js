@@ -12,7 +12,7 @@ const Project = (props) => {
             props.image
             :
             'https://www.charterres.com/wp-content/uploads/sites/5382/2018/01/Image-coming-soon.png'
-          } height='450px' width='300px' alt={ `${props.name} preview` } />
+          } height='400px' width='300px' alt={ `${props.name} preview` } />
         </div>
 
 

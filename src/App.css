@@ -128,14 +128,14 @@ p {
 .bottom {
   position: absolute;
   width: 100%;
-  bottom: 30px;
+  bottom: -50px;
   z-index: 1000;
 }
 
 .top {
   position: absolute;
   width: 100%;
-  top: 30px;
+  top: -50px;
   z-index: 1000;
 }
 
@@ -333,7 +333,7 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .mainRoute {
