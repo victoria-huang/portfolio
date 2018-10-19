@@ -139,7 +139,7 @@ p {
   z-index: 1000;
 }
 
-.navDots {
+/* .navDots {
   position: absolute;
   width: 100%;
   bottom: 20%;
@@ -149,7 +149,7 @@ p {
 .navDot {
   padding: 10px;
   cursor: pointer;
-}
+} */
 
 .arrow a {
   text-decoration: none;

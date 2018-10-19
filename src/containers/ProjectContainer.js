@@ -31,7 +31,7 @@ class ProjectContainer extends Component {
 
   renderProjects = () => {
     return allProjects.map( (project, idx) =>
-      <Project key={ v4() } { ...project } offset={ idx }/>
+      <Project key={ v4() } { ...project } offset={ idx } setActive={ this.setActive } />
     )
   }
 
@@ -42,36 +42,42 @@ class ProjectContainer extends Component {
     this.parallax.scrollTo(idx)
   }
 
-  renderNavDots = () => {
-    return allProjects.map( (project, idx) =>
-      <span
-        key={ v4() }
-        onClick = { () => this.handleClick(idx) }
-      >
-        <img src='assets/dot.png' className='navDot' alt='navigation dot' width={ this.state.active === idx ? '15px' : '10px' } height={ this.state.active === idx ? '15px' : '10px' } />
-      </span>
-    )
+  setActive = (idx) => {
+    this.setState({
+      active: idx
+    })
   }
+
+  // renderNavDots = () => {
+  //   return allProjects.map( (project, idx) =>
+  //     <span
+  //       key={ v4() }
+  //       onClick = { () => this.handleClick(idx) }
+  //     >
+  //       <img src='assets/dot.png' className='navDot' alt='navigation dot' width={ this.state.active === idx ? '15px' : '10px' } height={ this.state.active === idx ? '15px' : '10px' } />
+  //     </span>
+  //   )
+  // }
 
   render () {
     return (
       <animated.div className='subRoute' style={{ ...this.props.style, background: `#333333` }}>
         <div className='mainRouteItem'>
           <div className='arrow top'>
-            <Link to='/about'><FaAngleUp size={ 50 } /></Link>
+            {/*<Link to='/about'><FaAngleUp size={ 50 } /></Link>*/}
+            <a><h1 onClick={ () => this.handleClick(this.state.active) }>Project Name Here</h1></a>
           </div>
           {/*<Slider {...settings}>*/}
 
-          <Parallax horizontal ref={ this.setParallax } pages={ allProjects.length }>
+          <Parallax ref={ this.setParallax } pages={ allProjects.length }>
             <div className='container'>
-              <div className='column right' />
               { this.renderProjects() }
             </div>
           </Parallax>
 
-          <div className='navDots'>
+          {/*<div className='navDots'>
             { this.renderNavDots() }
-          </div>
+          </div> */}
 
           {/*</Slider>*/}
 

@@ -65,7 +65,7 @@ class Banner extends Component {
               to={{ opacity: 1, transform: 'translate3d(5px,0,0)' }}
               config={ config.molasses }
               >
-              { name.map(letter => props => <div style={props}><p style={{ color: '#FFFFFF', fontSize: '2.5em' }}>{ letter }</p></div>) }
+              { name.map(letter => props => <div style={props}><p style={{ color: '#FFFFFF', fontSize: '2.2em' }}>{ letter }</p></div>) }
             </Trail>
           </div>
         </animated.div>
