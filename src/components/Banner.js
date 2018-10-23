@@ -33,40 +33,47 @@ class Banner extends Component {
   }
 
   render() {
-    const name = "Developer Designer Pharmacist".split(' ')
+    const name = "developer designer pharmacist".split(' ')
 
     return (
         <animated.div className='mainRoute' style={{ ...this.props.style, background: `#1B1B1C` }}>
           <div className='mainRouteItem'>
-            <hr className='white-hr' style={{ width: '900px' }} />
             <h1
               className='header'
               ref='header'
               onMouseEnter={ this.handleMouseEnter }
               onMouseLeave={ this.handleMouseLeave }
               onClick={ () => this.props.history.push('/about') }
-              style={{ color: '#FFFFFF', opacity: this.state.mouseOver ? 0 : 1, display: this.state.mouseOver ? 'none' : 'block' }}
+              style={{ opacity: this.state.mouseOver ? 0 : 1, display: this.state.mouseOver ? 'none' : 'block' }}
             >
-              V i c t o r i a &nbsp; H u a n g
+              Victoria Huang
             </h1>
             <h1
               className='header'
               onMouseEnter={ this.handleMouseEnter }
               onMouseLeave={ this.handleMouseLeave }
               onClick={ () => this.props.history.push('/about') }
-              style={{ color: '#FFFFFF', opacity: this.state.mouseOver ? 1 : 0, display: this.state.mouseOver ? 'block' : 'none' }}
+              style={{ opacity: this.state.mouseOver ? 1 : 0, display: this.state.mouseOver ? 'block' : 'none' }}
             >
-              W h o &nbsp; I &nbsp; A m
+              &nbsp;&nbsp;&nbsp; Who I Am &nbsp;&nbsp;&nbsp;
             </h1>
-            <hr className='white-hr' style={{ width: '900px' }} />
-            <Trail
-              keys={name}
-              from={{ opacity: 0, transform: 'translate3d(0px,0,0)' }}
-              to={{ opacity: 1, transform: 'translate3d(5px,0,0)' }}
-              config={ config.molasses }
-              >
-              { name.map(letter => props => <div style={props}><p style={{ color: '#FFFFFF', fontSize: '2.2em' }}>{ letter }</p></div>) }
-            </Trail>
+            <hr className='white-hr' style={{ width: '200px' }} />
+            {
+              this.state.mouseOver
+              ?
+              <div className='trail'>
+                <Trail
+                  keys={name}
+                  from={{ opacity: 0, transform: 'translate3d(0px,0,0)' }}
+                  to={{ opacity: 1, transform: 'translate3d(5px,0,0)' }}
+                  config={ config.molasses }
+                  >
+                  { name.map(word => props => <div style={props}><p className='subheader'>{ word }</p></div>) }
+                </Trail>
+              </div>
+              :
+              <div className='trail' />
+            }
           </div>
         </animated.div>
     )

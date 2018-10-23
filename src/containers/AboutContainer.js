@@ -1,6 +1,6 @@
 import React from 'react'
 import { animated } from 'react-spring'
-import { FaAngleDown } from 'react-icons/fa'
+// import { FaAngleRight } from 'react-icons/fa'
 import Slider from 'react-slick'
 import About from '../components/About'
 import Resume from '../components/Resume'
@@ -17,9 +17,12 @@ const AboutContainer = (props) => {
           {/*<Resume />*/}
         {/*</Slider>*/}
 
-      <div className='arrow bottom'>
-        <Link to='/portfolio'><FaAngleDown size={ 50 } /></Link>
-      </div>
+      {/*<div className='arrow'>*/}
+        <Link to='/portfolio'>
+          <button className='button'>View Projects</button>
+          { /*<FaAngleRight size={ 50 } />*/ }
+        </Link>
+      {/*</div>*/}
 
       </div>
     </animated.div>

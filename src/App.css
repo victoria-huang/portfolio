@@ -117,12 +117,28 @@ p {
 } */
 
 .header {
-  font-size: 4em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3em;
+  color: #FFFFFF;
+  cursor: pointer;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 2s; /* Firefox < 16 */
     -ms-animation: fadein 2s; /* Internet Explorer */
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
+}
+
+.subheader {
+  color: #FFFFFF;
+  font-size: 1.4em;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.trail {
+  height: 0px;
 }
 
 .bottom {
@@ -150,6 +166,26 @@ p {
   padding: 10px;
   cursor: pointer;
 } */
+button{
+  display: inline-block;
+  position: relative;
+  background: #AAAAAA;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  /* background: rgba(0,0,0,0.09); */
+}
+
+.button {
+  border: solid 0px white;
+  transition: border-width 0.2s linear;
+}
+
+.button:hover {
+  border-width: 3px;
+}
 
 .arrow a {
   text-decoration: none;
