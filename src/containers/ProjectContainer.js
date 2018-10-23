@@ -36,9 +36,16 @@ class ProjectContainer extends Component {
   }
 
   handleClick = (idx) => {
+    if (idx < 0) {
+      idx = 0
+    } else if (idx > (allProjects.length - 1) ) {
+      idx = allProjects.length - 1
+    }
+
     this.setState({
       active: idx
     })
+
     this.parallax.scrollTo(idx)
   }
 
@@ -65,7 +72,15 @@ class ProjectContainer extends Component {
         <div className='mainRouteItem'>
           <div className='arrow top'>
             {/*<Link to='/about'><FaAngleUp size={ 50 } /></Link>*/}
-            <a><h1 onClick={ () => this.handleClick(this.state.active - 1) }>Project Name Here</h1></a>
+            <a>
+              <h1 onClick={ () => this.handleClick(this.state.active - 1) }>
+                {
+                  this.state.active > 0
+                  &&
+                  allProjects[this.state.active - 1].name
+                }
+              </h1>
+            </a>
           </div>
           {/*<Slider {...settings}>*/}
 
@@ -83,7 +98,15 @@ class ProjectContainer extends Component {
 
           <div className='arrow bottom'>
             {/*<Link to='/'><FaAngleDown size={ 50 } /></Link>*/}
-            <a><h1 onClick={ () => this.handleClick(this.state.active + 1) }>Project Name Here</h1></a>
+            <a>
+              <h1 onClick={ () => this.handleClick(this.state.active + 1) }>
+                {
+                  this.state.active < (allProjects.length - 1)
+                  &&
+                  allProjects[this.state.active + 1].name
+                }
+              </h1>
+            </a>
           </div>
         </div>
       </animated.div>
