@@ -10,12 +10,12 @@ const Nav = (props) => {
           <span></span>
           <span></span>
 
-        <ul id="menu">
-          <Link to='/'><li>hello</li></Link>
-          <Link to='/about'><li>about</li></Link>
-          <Link to='/portfolio'><li>portfolio</li></Link>
-          <Link to='/portfolio'><li>contact</li></Link>
-        </ul>
+        <div id="menu">
+          <Link to='/'>Hello. </Link>
+          <Link to='/about'>About. </Link>
+          <Link to='/portfolio'>Portfolio. </Link>
+          <Link to='/portfolio'>Contact. </Link>
+        </div>
       </div>
     </nav>
   )
