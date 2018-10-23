@@ -244,10 +244,32 @@ a {
   color: #232323;
   transition: color 0.3s ease;
   cursor: pointer;
+  position: relative;
 }
 
 a:hover {
   color: tomato;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 20px;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #menuToggle {
