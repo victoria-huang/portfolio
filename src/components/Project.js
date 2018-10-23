@@ -2,7 +2,6 @@ import React from 'react'
 import { ParallaxLayer } from 'react-spring'
 
 const Project = (props) => {
-  console.log(props)
   return (
     <ParallaxLayer offset={ props.offset } speed={-0.2}>
       <div className='container-item'>

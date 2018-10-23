@@ -31,7 +31,7 @@ class ProjectContainer extends Component {
 
   renderProjects = () => {
     return allProjects.map( (project, idx) =>
-      <Project key={ v4() } { ...project } offset={ idx } setActive={ this.setActive } />
+      <Project key={ v4() } { ...project } offset={ idx } />
     )
   }
 
@@ -49,11 +49,11 @@ class ProjectContainer extends Component {
     this.parallax.scrollTo(idx)
   }
 
-  setActive = (idx) => {
-    this.setState({
-      active: idx
-    })
-  }
+  // setActive = (idx) => {
+  //   this.setState({
+  //     active: idx
+  //   })
+  // }
 
   // renderNavDots = () => {
   //   return allProjects.map( (project, idx) =>
