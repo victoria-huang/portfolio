@@ -7,12 +7,18 @@ html, body, #root {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 h3 {
@@ -118,6 +124,8 @@ p {
 
 .header {
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
   font-size: 3em;
   color: #FFFFFF;
   cursor: pointer;
@@ -169,17 +177,19 @@ p {
 button{
   display: inline-block;
   position: relative;
-  background: #AAAAAA;
+  background: none;
   border: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-family: 'Cormorant Garamond', serif;
   cursor: pointer;
   padding: 10px;
   /* background: rgba(0,0,0,0.09); */
 }
 
 .button {
-  border: solid 0px white;
+  border: solid 2px rgba(200, 200, 200, 0.3);
   transition: border-width 0.2s linear;
 }
 
@@ -225,6 +235,8 @@ button{
 /************************  Hamburger Menu  **********************************/
 nav {
   position: absolute;
+  /* height: 100%; */
+  width: 100%;
 }
 
 a {
@@ -240,6 +252,8 @@ a:hover {
 
 #menuToggle {
   display: block;
+  /* height: 100%;
+  width: 100%; */
   position: relative;
   top: 30px;
   left: 30px;
@@ -248,6 +262,7 @@ a:hover {
 
   -webkit-user-select: none;
   user-select: none;
+  text-align: center;
 }
 
 #menuToggle input {
@@ -261,7 +276,7 @@ a:hover {
   cursor: pointer;
 
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 2;  /* and place it over the hamburger */
 
   -webkit-touch-callout: none;
 }
@@ -327,27 +342,28 @@ a:hover {
  */
 #menu {
   position: relative;
-  width: 100%;
-  height: 100%;
+  z-index: -1;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   border-radius: 25px;
 
-  background: rgba(237, 237, 237, 0.5);
+  background: rgba(237, 237, 237, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, -100%);
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  font-size: 4em;
 }
 
 /*

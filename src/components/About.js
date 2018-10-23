@@ -5,7 +5,7 @@ const About = (props) => {
       <div>
         <div className='row-container'>
           <div className='column-left'>
-            <h1>Hi! I'm <span className='emphasize'>Victoria</span>.</h1>
+            <h2>Hi! I'm <span className='emphasize'>Victoria</span>.</h2>
             <h3>
               Full-stack web <span className='emphasize'>developer</span> and <span className='emphasize'>pharmacist</span> based in New York City.
               I'm passionate about utilizing my skills

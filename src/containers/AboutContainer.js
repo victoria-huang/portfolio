@@ -19,7 +19,7 @@ const AboutContainer = (props) => {
 
       {/*<div className='arrow'>*/}
         <Link to='/portfolio'>
-          <button className='button'>View Projects</button>
+          <button className='button'>View my projects.</button>
           { /*<FaAngleRight size={ 50 } />*/ }
         </Link>
       {/*</div>*/}
