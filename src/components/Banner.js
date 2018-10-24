@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { animated, config } from 'react-spring'
+import { animated } from 'react-spring'
 import sr from './ScrollReveal'
 import TrailText from './TrailText'
 
@@ -47,7 +47,7 @@ class Banner extends Component {
             >
               Victoria Huang
             </h1>
-            
+
             <h1
               className='header'
               onMouseEnter={ this.handleMouseEnter }

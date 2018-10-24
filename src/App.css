@@ -30,7 +30,7 @@ p {
 }
 
 .emphasize {
-  color: orange;
+  color: tomato;
   letter-spacing: 2.5px;
 }
 
@@ -95,12 +95,17 @@ p {
 
 .overlay-text {
   position: absolute;
-  color: black;
-  letter-spacing: 3px;
-  font-weight: bold;
+  color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.trigger {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  cursor: pointer;
 }
 
 .large {
@@ -166,7 +171,7 @@ p {
 .bottom {
   position: absolute;
   width: 100%;
-  bottom: -83px;
+  bottom: -80px;
   z-index: 1000;
 }
 
@@ -182,7 +187,7 @@ p {
 .top {
   position: absolute;
   width: 100%;
-  top: -83px;
+  top: -80px;
   z-index: 1000;
 }
 
@@ -282,7 +287,7 @@ a {
 }
 
 a:hover {
-  color: tomato;
+  color: white;
 }
 
 .contact a {
@@ -292,27 +297,6 @@ a:hover {
 .contact a:hover {
   color: tomato;
 }
-
-/* a:before {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 0.5px;
-  bottom: 0;
-  left: 8px;
-  background-color: #232323;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
 
 #menuToggle {
   display: block;
@@ -491,6 +475,46 @@ a:hover:before {
   /* font-size: 50px; */
   color: white;
   height: 100%;
+}
+
+.modal {
+  font-size: 12px;
+}
+
+.modal > .m-header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  color: black;
+}
+
+.modal > .m-content {
+  width: 100%;
+  padding: 10px 5px;
+  color: black;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  border-radius: 18px;
+  color: black;
+  border: 1px solid black;
 }
 
 /* .nav {

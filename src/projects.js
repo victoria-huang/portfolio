@@ -60,7 +60,7 @@ export const allProjects = [
     current: false
   },
   {
-    name: 'Medication Interactions',
+    name: 'Interaction Checker',
     backendRepo: '',
     frontendRepo: '',
     url: '',

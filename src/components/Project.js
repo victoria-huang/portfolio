@@ -1,30 +1,37 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { ParallaxLayer } from 'react-spring'
 import { Link } from 'react-router-dom'
+import ProjectDetail from './ProjectDetail'
 
-const Project = (props) => {
-  return (
-    <ParallaxLayer offset={ props.offset } speed={-0.2}>
-      <div className='container-item'>
-        <div>
-          <h1 className='overlay-text large'>{ props.name }</h1>
-          <img src={ props.image ?
-            props.image
-            :
-            'https://www.charterres.com/wp-content/uploads/sites/5382/2018/01/Image-coming-soon.png'
-          } height='400px' width='300px' alt={ `${props.name} preview` } />
+class Project extends Component {
+  render() {
+    return (
+      <ParallaxLayer offset={ this.props.offset } speed={-0.2} style={{ backgroundColor: '#006E6D' }}>
+        <div className='container-item'>
+          <div>
+            <span className='overlay-text'>
+              <h1 className='large'>{ this.props.name }</h1>
+            </span>
+            <img src={ this.props.image ?
+              this.props.image
+              :
+              'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
+            } height='350px' width='300px' alt={ `${this.props.name} preview` } />
+          </div>
+          <ProjectDetail />
         </div>
-      </div>
-      {
-        props.last &&
-        <span className='bottom-button'>
-          <Link to='/contact'>
-            <button className='button-2'>Contact me.</button>
-          </Link>
-        </span>
-      }
-    </ParallaxLayer>
-  )
+
+        {
+          this.props.last &&
+          <span className='bottom-button'>
+            <Link to='/contact'>
+              <button className='button-2'>Contact me.</button>
+            </Link>
+          </span>
+        }
+      </ParallaxLayer>
+    )
+  }
 }
 
 export default Project

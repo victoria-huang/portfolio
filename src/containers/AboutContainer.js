@@ -1,12 +1,7 @@
 import React from 'react'
 import { animated } from 'react-spring'
-// import { FaAngleRight } from 'react-icons/fa'
-import Slider from 'react-slick'
 import About from '../components/About'
-import Resume from '../components/Resume'
 import { Link } from 'react-router-dom'
-
-const settings = { dots: true }
 
 const AboutContainer = (props) => {
   return (
@@ -19,7 +14,7 @@ const AboutContainer = (props) => {
 
       {/*<div className='arrow'>*/}
         <Link to='/portfolio'>
-          <button className='button'>View my projects.</button>    
+          <button className='button'>View my projects.</button>
           { /*<FaAngleRight size={ 50 } />*/ }
         </Link>
         <a href='' target="_blank" rel="noopener noreferrer">

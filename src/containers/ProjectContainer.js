@@ -1,21 +1,8 @@
 import React, { Component } from 'react'
-import { animated, Parallax, ParallaxLayer } from 'react-spring'
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-// import Slider from 'react-slick'
+import { animated, Parallax } from 'react-spring'
 import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
-
-// const settings = {
-//       centerMode: true,
-//       infinite: true,
-//       centerPadding: '60px',
-//       slidesToShow: 1,
-//       speed: 500,
-//       swipeToSlide: true,
-//       dots: true,
-//     }
 
 class ProjectContainer extends Component {
   constructor() {
@@ -68,7 +55,7 @@ class ProjectContainer extends Component {
 
   render () {
     return (
-      <animated.div className='subRoute' style={{ ...this.props.style, background: `#333333` }}>
+      <animated.div className='subRoute' style={{ ...this.props.style }}>
         <div className='mainRouteItem'>
           <div className='arrow top'>
             {/*<Link to='/about'><FaAngleUp size={ 50 } /></Link>*/}
@@ -89,7 +76,6 @@ class ProjectContainer extends Component {
               { this.renderProjects() }
             </div>
           </Parallax>
-
           {/*<div className='navDots'>
             { this.renderNavDots() }
           </div> */}

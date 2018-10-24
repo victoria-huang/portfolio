@@ -2,8 +2,6 @@ import React from 'react'
 import { animated } from 'react-spring'
 import { FaGithub, FaLinkedin, FaMedium, FaEnvelopeSquare } from 'react-icons/fa'
 
-const settings = { dots: true }
-
 const Contact = (props) => {
   return (
     <animated.div className='mainRoute' style={{ ...props.style, background: `#555555` }}>
