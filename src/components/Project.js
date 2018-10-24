@@ -1,7 +1,6 @@
 import React from 'react'
 import { ParallaxLayer } from 'react-spring'
 import { Link } from 'react-router-dom'
-import ProjectDetail from './ProjectDetail'
 
 const Project = (props) => {
   return (
@@ -10,6 +9,7 @@ const Project = (props) => {
         <div>
           <span className='overlay-text'>
             <h1 className='large'>{ props.name }</h1>
+            <p className='trigger'>Learn more.</p>
           </span>
           <img src={ props.image ?
             props.image
@@ -17,7 +17,6 @@ const Project = (props) => {
             'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
           } height='350px' width='300px' alt={ `${props.name} preview` } />
         </div>
-        <ProjectDetail />
       </div>
 
       {
