@@ -73,7 +73,7 @@ class ProjectContainer extends Component {
           <div className='arrow top'>
             {/*<Link to='/about'><FaAngleUp size={ 50 } /></Link>*/}
             <a>
-              <h1 onClick={ () => this.handleClick(this.state.active - 1) }>
+              <h1 className='large' onClick={ () => this.handleClick(this.state.active - 1) }>
                 {
                   this.state.active > 0
                   &&
@@ -84,7 +84,7 @@ class ProjectContainer extends Component {
           </div>
           {/*<Slider {...settings}>*/}
 
-          <Parallax scrolling={ true } ref={ this.setParallax } pages={ allProjects.length }>
+          <Parallax scrolling={ false } ref={ this.setParallax } pages={ allProjects.length }>
             <div className='container'>
               { this.renderProjects() }
             </div>
@@ -99,7 +99,7 @@ class ProjectContainer extends Component {
           <div className='arrow bottom'>
             {/*<Link to='/'><FaAngleDown size={ 50 } /></Link>*/}
             <a>
-              <h1 onClick={ () => this.handleClick(this.state.active + 1) }>
+              <h1 className='large' onClick={ () => this.handleClick(this.state.active + 1) }>
                 {
                   this.state.active < (allProjects.length - 1)
                   &&

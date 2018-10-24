@@ -7,7 +7,7 @@ const Project = (props) => {
     <ParallaxLayer offset={ props.offset } speed={-0.2}>
       <div className='container-item'>
         <div>
-          <h1>{ props.name }</h1>
+          <h1 className='overlay-text large'>{ props.name }</h1>
           <img src={ props.image ?
             props.image
             :
