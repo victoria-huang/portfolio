@@ -156,6 +156,15 @@ p {
   z-index: 1000;
 }
 
+.bottom-button {
+  position: absolute;
+  bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+}
+
 .top {
   position: absolute;
   width: 100%;
@@ -174,7 +183,7 @@ p {
   padding: 10px;
   cursor: pointer;
 } */
-button{
+button {
   display: inline-block;
   position: relative;
   background: none;
@@ -191,11 +200,23 @@ button{
 .button {
   border: solid 2px rgba(200, 200, 200, 0.3);
   transition: border-width 0.2s linear;
+  margin: 5px;
 }
 
-.button:hover {
+.button-2 {
+  width: 25%;
+  font-size: 2em;
+  border: solid 2px rgba(200, 200, 200, 0.3);
+  transition: border-width 0.2s linear;
+}
+
+button:hover {
   border-width: 3px;
 }
+
+/* .button:hover {
+  border-width: 3px;
+} */
 
 .arrow a {
   text-decoration: none;
@@ -241,13 +262,20 @@ nav {
 
 a {
   text-decoration: none;
-  color: #232323;
   transition: color 0.3s ease;
   cursor: pointer;
   /* position: relative; */
 }
 
 a:hover {
+  color: tomato;
+}
+
+.contact a {
+  color: white;
+}
+
+.contact a:hover {
   color: tomato;
 }
 
@@ -389,6 +417,7 @@ a:hover:before {
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 1.1em;
+  color: #232323;
 }
 
 #menu a:hover {

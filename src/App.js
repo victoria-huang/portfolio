@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Banner from './components/Banner'
 import AboutContainer from './containers/AboutContainer'
 import ProjectContainer from './containers/ProjectContainer'
+import Contact from './components/Contact'
 import { Transition } from 'react-spring'
 import Nav from './components/Nav'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -28,6 +29,7 @@ class App extends Component {
                       <Route exact path="/" render={props => <Banner { ...props } style={style} /> } />
                       <Route path="/about" render={props => <AboutContainer { ...props } style={style} /> } />
                       <Route path="/portfolio" render={props => <ProjectContainer { ...props } style={style} /> } />
+                      <Route path="/contact" render={props => <Contact { ...props } style={style} /> } />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
                   )}

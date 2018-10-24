@@ -14,7 +14,8 @@ const Nav = (props) => {
           <Link to='/'>Hello.</Link>
           <Link to='/about'>About.</Link>
           <Link to='/portfolio'>Portfolio.</Link>
-          <Link to='/portfolio'>Contact.</Link>
+          <a href='' target="_blank" rel="noopener noreferrer">Resume.</a>
+          <Link to='/contact'>Contact.</Link>
         </div>
       </div>
     </nav>

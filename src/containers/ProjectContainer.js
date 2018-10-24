@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { animated, Parallax } from 'react-spring'
+import { animated, Parallax, ParallaxLayer } from 'react-spring'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 // import Slider from 'react-slick'
@@ -31,7 +31,7 @@ class ProjectContainer extends Component {
 
   renderProjects = () => {
     return allProjects.map( (project, idx) =>
-      <Project key={ v4() } { ...project } offset={ idx } />
+      <Project key={ v4() } { ...project } offset={ idx } last={ idx === allProjects.length - 1 } />
     )
   }
 
@@ -84,7 +84,7 @@ class ProjectContainer extends Component {
           </div>
           {/*<Slider {...settings}>*/}
 
-          <Parallax scrolling={ false } ref={ this.setParallax } pages={ allProjects.length }>
+          <Parallax scrolling={ true } ref={ this.setParallax } pages={ allProjects.length }>
             <div className='container'>
               { this.renderProjects() }
             </div>
