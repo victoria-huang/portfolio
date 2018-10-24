@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { animated, Trail, config } from 'react-spring'
+import { animated, config } from 'react-spring'
 import sr from './ScrollReveal'
+import TrailText from './TrailText'
 
 class Banner extends Component {
   state = {
@@ -33,8 +34,6 @@ class Banner extends Component {
   }
 
   render() {
-    const name = "developer designer pharmacist".split(' ')
-
     return (
         <animated.div className='mainRoute' style={{ ...this.props.style, background: `#1B1B1C` }}>
           <div className='mainRouteItem'>
@@ -48,6 +47,7 @@ class Banner extends Component {
             >
               Victoria Huang
             </h1>
+            
             <h1
               className='header'
               onMouseEnter={ this.handleMouseEnter }
@@ -57,23 +57,10 @@ class Banner extends Component {
             >
               &nbsp;&nbsp;&nbsp; Who I Am &nbsp;&nbsp;&nbsp;
             </h1>
+
             <hr className='white-hr' style={{ width: '200px' }} />
-            {
-              this.state.mouseOver
-              ?
-              <div className='trail'>
-                <Trail
-                  keys={name}
-                  from={{ opacity: 0, transform: 'translate3d(0px,0,0)' }}
-                  to={{ opacity: 1, transform: 'translate3d(5px,0,0)' }}
-                  config={ config.molasses }
-                  >
-                  { name.map(word => props => <div style={props}><p className='subheader'>{ word }</p></div>) }
-                </Trail>
-              </div>
-              :
-              <div className='trail' />
-            }
+
+            { this.state.mouseOver && <TrailText /> }
           </div>
         </animated.div>
     )
