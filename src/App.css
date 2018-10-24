@@ -244,21 +244,21 @@ a {
   color: #232323;
   transition: color 0.3s ease;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 
 a:hover {
   color: tomato;
 }
 
-a:before {
+/* a:before {
   content: "";
   position: absolute;
-  width: 50%;
-  height: 2px;
+  width: 70%;
+  height: 0.5px;
   bottom: 0;
-  left: 20px;
-  background-color: #000;
+  left: 8px;
+  background-color: #232323;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -270,7 +270,7 @@ a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
+} */
 
 #menuToggle {
   display: block;
@@ -371,7 +371,7 @@ a:hover:before {
   padding-bottom: 20px;
   /* border-radius: 25px; */
 
-  background: rgba(237, 237, 237, 0.8);
+  background: rgba(200, 200, 200, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -389,6 +389,10 @@ a:hover:before {
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 1.1em;
+}
+
+#menu a:hover {
+  color: rgba(5, 5, 5, 0.4);
 }
 
 /*

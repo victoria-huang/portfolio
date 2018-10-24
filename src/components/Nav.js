@@ -11,10 +11,10 @@ const Nav = (props) => {
           <span></span>
 
         <div id="menu">
-          <Link to='/'>Hello. </Link>
-          <Link to='/about'>About. </Link>
-          <Link to='/portfolio'>Portfolio. </Link>
-          <Link to='/portfolio'>Contact. </Link>
+          <Link to='/'>Hello.</Link>
+          <Link to='/about'>About.</Link>
+          <Link to='/portfolio'>Portfolio.</Link>
+          <Link to='/portfolio'>Contact.</Link>
         </div>
       </div>
     </nav>
