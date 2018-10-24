@@ -6,7 +6,7 @@ export const allProjects = [
     url: '',
     image: '',
     tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS'],
-    description: 'A platform to streamline attendance tracking',
+    description: 'A platform to streamline attendance tracking.',
     current: true
   },
   {
@@ -16,7 +16,7 @@ export const allProjects = [
     url: '',
     image: '',
     tech: ['Node', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
-    description: "Interactive experience based on Reddit's r/place",
+    description: "Interactive experience based on Reddit's r/place.",
     current: false
   },
   {
@@ -66,7 +66,7 @@ export const allProjects = [
     url: '',
     image: '',
     tech: ['Ruby'],
-    description: 'A command line application that ensures medication safety and checks for possible drug interactions',
+    description: 'A command line application that ensures medication safety and checks for possible drug interactions.',
     current: false
   },
   {
@@ -76,7 +76,7 @@ export const allProjects = [
     url: '',
     image: '',
     tech: ['Java'],
-    description: 'A command line interface that simulates a simple poker bot',
+    description: 'A command line interface that simulates a simple poker bot.',
     current: false
   }
 ]
