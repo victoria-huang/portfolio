@@ -20,7 +20,7 @@ class Project extends Component {
         <div className='container-item'>
           {
             this.state.isClicked ?
-              <ProjectDetail handleClick={ this.handleClick} />
+              <ProjectDetail handleClick={ this.handleClick} { ...this.props} />
             :
               <div>
                 <span className='overlay-text'>

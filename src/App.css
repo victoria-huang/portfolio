@@ -34,6 +34,13 @@ p {
   letter-spacing: 2.5px;
 }
 
+.wip {
+  color: yellow;
+  letter-spacing: 2.5px;
+  font-style: italic;
+  font-size: 1em;
+}
+
 .white-hr {
   border: 0;
   height: 2px;
