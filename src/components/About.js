@@ -11,8 +11,7 @@ const About = (props) => {
               I'm passionate about utilizing my skills
               to <span className='emphasize'>create</span> beautiful and meaningful projects.
             </h3>
-            {/*<hr className='white-hr' />
-            <p>Technical Skills</p>*/}
+
             <hr className='white-hr' />
 
             <p>
