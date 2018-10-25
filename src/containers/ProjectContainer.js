@@ -36,29 +36,11 @@ class ProjectContainer extends Component {
     this.parallax.scrollTo(idx)
   }
 
-  // setActive = (idx) => {
-  //   this.setState({
-  //     active: idx
-  //   })
-  // }
-
-  // renderNavDots = () => {
-  //   return allProjects.map( (project, idx) =>
-  //     <span
-  //       key={ v4() }
-  //       onClick = { () => this.handleClick(idx) }
-  //     >
-  //       <img src='assets/dot.png' className='navDot' alt='navigation dot' width={ this.state.active === idx ? '15px' : '10px' } height={ this.state.active === idx ? '15px' : '10px' } />
-  //     </span>
-  //   )
-  // }
-
   render () {
     return (
       <animated.div className='subRoute' style={{ ...this.props.style }}>
         <div className='mainRouteItem'>
           <div className='arrow top'>
-            {/*<Link to='/about'><FaAngleUp size={ 50 } /></Link>*/}
             <a>
               <h1 className='large' onClick={ () => this.handleClick(this.state.active - 1) }>
                 {
@@ -69,21 +51,14 @@ class ProjectContainer extends Component {
               </h1>
             </a>
           </div>
-          {/*<Slider {...settings}>*/}
 
           <Parallax scrolling={ false } ref={ this.setParallax } pages={ allProjects.length }>
             <div className='container'>
               { this.renderProjects() }
             </div>
           </Parallax>
-          {/*<div className='navDots'>
-            { this.renderNavDots() }
-          </div> */}
-
-          {/*</Slider>*/}
 
           <div className='arrow bottom'>
-            {/*<Link to='/'><FaAngleDown size={ 50 } /></Link>*/}
             <a>
               <h1 className='large' onClick={ () => this.handleClick(this.state.active + 1) }>
                 {
