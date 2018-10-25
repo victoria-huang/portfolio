@@ -26,11 +26,11 @@ class App extends Component {
                   leave={{ transform: 'translateX(-250px)', opacity: 0 }}>
                   {style => (
                     <Switch location={location}>
-                      <Route exact path="/" render={props => <Banner { ...props } style={style} /> } />
-                      <Route path="/about" render={props => <AboutContainer { ...props } style={style} /> } />
-                      <Route path="/portfolio" render={props => <ProjectContainer { ...props } style={style} /> } />
-                      <Route path="/contact" render={props => <Contact { ...props } style={style} /> } />
-                      <Route render={() => <div>Not Found</div>} />
+                      <Route exact path="/" render={props => <Banner { ...props } style={ style } /> } />
+                      <Route path="/about" render={props => <AboutContainer { ...props } style={ style } /> } />
+                      <Route path="/portfolio" render={props => <ProjectContainer { ...props } style={ style } /> } />
+                      <Route path="/contact" render={props => <Contact { ...props } style={ style } /> } />
+                      <Route render={() => <div className='mainRoute' style={{ background:'#000000' }}><h1>Page Not Found</h1></div>} />
                     </Switch>
                   )}
                 </Transition>

@@ -14,6 +14,18 @@ class Project extends Component {
     }))
   }
 
+  // componentDidMount() {
+  //   console.log('proj mount');
+  // }
+  //
+  // componentDidUpdate() {
+  //   console.log('update');
+  // }
+  //
+  // componentWillUnmount() {
+  //   console.log('proj unmount');
+  // }
+
   render() {
     return (
       <ParallaxLayer offset={ this.props.offset } speed={-0.2} style={{ backgroundColor: '#006E6D' }}>
