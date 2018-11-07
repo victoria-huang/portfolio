@@ -46,7 +46,7 @@ class ProjectContainer extends Component {
                 {
                   this.state.active > 0
                   &&
-                  allProjects[this.state.active - 1].name
+                  `Previous: ${allProjects[this.state.active - 1].name}`
                 }
               </h1>
             </a>
@@ -64,7 +64,7 @@ class ProjectContainer extends Component {
                 {
                   this.state.active < (allProjects.length - 1)
                   &&
-                  allProjects[this.state.active + 1].name
+                  `Next: ${allProjects[this.state.active + 1].name}`
                 }
               </h1>
             </a>

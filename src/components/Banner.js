@@ -18,7 +18,7 @@ class Banner extends Component {
       easing: 'ease',
     }
 
-    sr.reveal(this.refs.header, config)
+    // sr.reveal(this.refs.header, config)
   }
 
   handleMouseEnter = () => {
@@ -60,7 +60,7 @@ class Banner extends Component {
 
             <hr className='white-hr' style={{ width: '200px' }} />
 
-            { this.state.mouseOver && <TrailText /> }
+            {/* this.state.mouseOver && <TrailText /> */}
           </div>
         </animated.div>
     )

@@ -7,9 +7,10 @@ const About = (props) => {
           <div className='column-left'>
             <h2>Hi! I'm <span className='emphasize'>Victoria</span>.</h2>
             <h3>
-              Full-stack software <span className='emphasize'>engineer</span> and <span className='emphasize'>pharmacist</span> based in New York City.
-              I'm passionate about utilizing my skills
-              to <span className='emphasize'>create</span> beautiful and impactful projects.
+              Full-stack software <span className='emphasize'>engineer</span> and <span className='emphasize'>pharmacist</span> based
+              in New York City.
+              I'm passionate about <span className='emphasize'>creating</span> and <span className='emphasize'>developing</span> impactful
+              applications to improve our quality of life.
             </h3>
 
             <hr className='white-hr' />
