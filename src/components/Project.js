@@ -43,7 +43,7 @@ class Project extends Component {
                   this.props.image
                   :
                   'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
-                } height='350px' width='300px' alt={ `${this.props.name} preview` } />
+                } height='450px' width='300px' alt={ `${this.props.name} preview` } />
               </div>
           }
         </div>

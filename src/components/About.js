@@ -16,8 +16,8 @@ const About = (props) => {
             <hr className='white-hr' />
 
             <p>
-              // React, React Native, Redux, Node, Express, JavaScript, Ruby, Rails, Java, RSpec, SQL,
-              // PostgreSQL, HTML, CSS, Canvas, Bootstrap, Semantic, Git, Heroku
+              {/*React, React Native, Redux, Node, Express, JavaScript, Ruby, Rails, Java, RSpec, SQL,
+              PostgreSQL, HTML, CSS, Canvas, Bootstrap, Semantic, Git, Heroku*/}
               JavaScript, React, React Native, Redux, Node.js, Express, Ruby, Rails, Java, SQL, HTML, CSS, Git
             </p>
           </div>
