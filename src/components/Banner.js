@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { animated } from 'react-spring'
 import sr from './ScrollReveal'
-import TrailText from './TrailText'
+// import TrailText from './TrailText'
 
 class Banner extends Component {
   state = {

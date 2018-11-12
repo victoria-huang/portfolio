@@ -13,7 +13,7 @@ const Contact = (props) => {
           <FaEnvelopeSquare size={ 50 } />
         </a>
 
-        <a href="https://www.linkedin.com/in/victoriah92/" target="_blank" rel="noopener noreferrer" style={{ paddingLeft: '30px'}}>
+        <a href="https://www.linkedin.com/in/huang-victoria/" target="_blank" rel="noopener noreferrer" style={{ paddingLeft: '30px'}}>
           <FaLinkedin size={ 50 } />
         </a>
 
