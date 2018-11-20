@@ -18,7 +18,7 @@ class ProjectDetail extends Component {
   render() {
     return (
       <div className="project-detail">
-        <h1 className="large" style={{ marginBottom: '10px' }}>{ this.props.name }</h1>
+        <h1 className="project-header">{ this.props.name }</h1>
         <hr className='white-hr' style={{ width: '200px' }} />
         { this.props.current && <p className='wip'>work in progress</p> }
         <p>{ this.props.description }</p>
