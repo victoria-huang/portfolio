@@ -3,6 +3,7 @@ import { animated, Parallax } from 'react-spring'
 import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
+import debounce from 'lodash/debounce';
 
 class ProjectContainer extends Component {
   constructor() {
@@ -22,7 +23,7 @@ class ProjectContainer extends Component {
     )
   }
 
-  handleClick = (idx) => {
+  handlePageChange = (idx) => {
     if (idx < 0) {
       idx = 0
     } else if (idx > (allProjects.length - 1) ) {
@@ -36,17 +37,21 @@ class ProjectContainer extends Component {
     this.parallax.scrollTo(idx)
   }
 
+  handleWheel = debounce( idx => {
+    this.handlePageChange(idx)
+  }, 50)
+
   render () {
     return (
       <animated.div className='subRoute' style={{ ...this.props.style }}>
-        <div className='mainRouteItem'>
+        <div onWheel={() => this.handleWheel(this.state.active + 1)} className='mainRouteItem'>
           <div className='arrow top'>
             <a>
-              <h1 className='large' onClick={ () => this.handleClick(this.state.active - 1) }>
+              <h1 className='large' onClick={ () => this.handlePageChange(this.state.active - 1) }>
                 {
                   this.state.active > 0
                   &&
-                  `Previous: ${allProjects[this.state.active - 1].name}`
+                  allProjects[this.state.active - 1].name
                 }
               </h1>
             </a>
@@ -60,11 +65,11 @@ class ProjectContainer extends Component {
 
           <div className='arrow bottom'>
             <a>
-              <h1 className='large' onClick={ () => this.handleClick(this.state.active + 1) }>
+              <h1 className='large' onClick={ () => this.handlePageChange(this.state.active + 1) }>
                 {
                   this.state.active < (allProjects.length - 1)
                   &&
-                  `Next: ${allProjects[this.state.active + 1].name}`
+                  allProjects[this.state.active + 1].name
                 }
               </h1>
             </a>
