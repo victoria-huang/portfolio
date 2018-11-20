@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { animated } from 'react-spring'
-import sr from './ScrollReveal'
+// import sr from './ScrollReveal'
 // import TrailText from './TrailText'
 
 class Banner extends Component {
@@ -8,18 +8,18 @@ class Banner extends Component {
     mouseOver: false
   }
 
-  componentDidMount = () => {
-    const config = {
-      origin: 'left',
-      duration: 1000,
-      delay: 100,
-      distance: '500px',
-      scale: 1,
-      easing: 'ease',
-    }
+  // componentDidMount = () => {
+  //   const config = {
+  //     origin: 'left',
+  //     duration: 1000,
+  //     delay: 100,
+  //     distance: '500px',
+  //     scale: 1,
+  //     easing: 'ease',
+  //   }
 
-    // sr.reveal(this.refs.header, config)
-  }
+  //   sr.reveal(this.refs.header, config)
+  // }
 
   handleMouseEnter = () => {
     this.setState({

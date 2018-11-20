@@ -39,11 +39,11 @@ class Project extends Component {
                   <h1 className='large'>{ this.props.name }</h1>
                   <p className='trigger' onClick={ this.handleClick }>Learn more.</p>
                 </span>
-                <img src={ this.props.image ?
+                <img className='project-image' src={ this.props.image ?
                   this.props.image
                   :
                   'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
-                } height='450px' width='300px' alt={ `${this.props.name} preview` } />
+                } alt={ `${this.props.name} preview` } />
               </div>
           }
         </div>
