@@ -23,12 +23,10 @@ class ProjectContainer extends Component {
     )
   }
 
-  handlePageChange = (idx) => {
-    if (idx < 0) {
-      idx = 0
-    } else if (idx > (allProjects.length - 1) ) {
-      idx = allProjects.length - 1
-    }
+  handlePageChange = idx => {
+    if (idx < 0) idx = 0
+    
+    if (idx > (allProjects.length - 1) ) idx = allProjects.length - 1
 
     this.setState({
       active: idx
@@ -37,14 +35,19 @@ class ProjectContainer extends Component {
     this.parallax.scrollTo(idx)
   }
 
-  handleWheel = debounce( idx => {
+  handleWheelMove = debounce( idx => {
     this.handlePageChange(idx)
   }, 50)
+
+  handleWheel = e => {
+    if (e.deltaY > 0) this.handleWheelMove(this.state.active + 1)
+    if (e.deltaY < 0) this.handleWheelMove(this.state.active - 1)
+  }
 
   render () {
     return (
       <animated.div className='subRoute' style={{ ...this.props.style }}>
-        <div onWheel={() => this.handleWheel(this.state.active + 1)} className='mainRouteItem'>
+        <div onWheel={ this.handleWheel } className='mainRouteItem'>
           <div className='arrow top'>
             <a>
               <h1 className='large' onClick={ () => this.handlePageChange(this.state.active - 1) }>
