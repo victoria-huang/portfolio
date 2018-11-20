@@ -664,8 +664,8 @@ h1 {
   }
 
   .project-image {
-    height: 250px;
-    width: 180px;
+    height: 300px;
+    width: 200px;
   }
 
   .bottom {
@@ -692,7 +692,68 @@ h1 {
   #menu a {
     letter-spacing: 1px;
     font-size: 0.9em;
-    padding: 3px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .button {
+    font-size: 1.2em;
+  }
+
+  .large {
+    font-size: 2em;
+  }
+
+  .project-image {
+    height: 300px;
+    width: 200px;
+  }
+
+  .bottom {
+    bottom: -30px;
+  }
+
+  .top {
+    top: -30px;
+  }
+
+  .button-2 {
+    font-size: 1.2em;
+    width: 50%;
+  }
+
+  .project-detail {
+    padding: 5px;
+  }
+
+  .project-detail p {
+    font-size: 0.8em;
+  }
+
+  #menu a {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .project-image {
+    height: 180px;
+    width: 120px;
+  }
+
+  .button {
+    font-size: 0.8em;
   }
 }
 
