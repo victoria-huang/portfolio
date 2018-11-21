@@ -3,7 +3,8 @@ import { animated, Parallax } from 'react-spring'
 import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
-import debounce from 'lodash/debounce';
+import debounce from 'lodash/debounce'
+// import throttle from 'lodash/throttle'
 
 class ProjectContainer extends Component {
   constructor() {
@@ -30,18 +31,18 @@ class ProjectContainer extends Component {
 
     this.setState({
       active: idx
+    }, () => {
+      this.parallax.scrollTo(idx)
     })
-
-    this.parallax.scrollTo(idx)
   }
 
-  handleWheelMove = debounce( idx => {
+  debounceWheel = debounce( idx => {
     this.handlePageChange(idx)
   }, 50)
 
   handleWheel = e => {
-    if (e.deltaY > 0) this.handleWheelMove(this.state.active + 1)
-    if (e.deltaY < 0) this.handleWheelMove(this.state.active - 1)
+    if (e.deltaY > 0) this.debounceWheel(this.state.active + 1)
+    if (e.deltaY < 0) this.debounceWheel(this.state.active - 1)
   }
 
   render () {
