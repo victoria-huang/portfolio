@@ -108,11 +108,29 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.trigger {
+.back {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   letter-spacing: 0;
   cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.back:hover {
+  color: #A9A9A9;
+}
+
+.trigger {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  border: 0.2px solid white;
+  transition: border-width 0.2s linear;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.trigger:hover {
+  border-width: 1px;
 }
 
 .large {

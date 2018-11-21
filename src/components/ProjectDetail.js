@@ -40,7 +40,7 @@ class ProjectDetail extends Component {
             <button className='button'>Repo</button>
         }
 
-        <p className='trigger' onClick={ this.props.handleClick }>{'< Back >'}</p>
+        <p className='back' onClick={ this.props.handleClick }>{'< Back >'}</p>
       </div>
     )
   }

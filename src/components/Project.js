@@ -37,7 +37,7 @@ class Project extends Component {
               <div>
                 <span className='overlay-text'>
                   <h1 className='large'>{ this.props.name }</h1>
-                  <p className='trigger' onClick={ this.handleClick }>Learn more.</p>
+                  <button className='trigger' onClick={ this.handleClick }>Learn more.</button>
                 </span>
                 <img className='project-image' src={ this.props.image ?
                   this.props.image
