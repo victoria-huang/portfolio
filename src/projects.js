@@ -14,7 +14,7 @@ export const allProjects = [
     backendRepo: '',
     frontendRepo: 'https://github.com/DanielSeehausen/fi-field-day/',
     url: '',
-    image: '',
+    image: 'field_day.gif',
     tech: ['Node', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
     description: "Interactive experience based on Reddit's r/place.",
     current: false

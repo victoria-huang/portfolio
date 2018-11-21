@@ -36,11 +36,11 @@ class Project extends Component {
             :
               <div>
                 <span className='overlay-text'>
-                  <h1 className='large'>{ this.props.name }</h1>
+                  <h1 onClick={ this.handleClick } style={{cursor: 'pointer'}} className='large'>{ this.props.name }</h1>
                   <button className='trigger' onClick={ this.handleClick }>Learn more.</button>
                 </span>
-                <img className='project-image' src={ this.props.image ?
-                  this.props.image
+                <img onClick={ this.handleClick } className='project-image' src={ this.props.image ?
+                  `assets/${this.props.image}`
                   :
                   'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
                 } alt={ `${this.props.name} preview` } />
