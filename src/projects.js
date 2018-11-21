@@ -1,13 +1,13 @@
 export const allProjects = [
   {
-    name: 'Attendance Tracker',
-    backendRepo: 'https://github.com/victoria-huang/attendance-bot',
-    frontendRepo: '',
+    name: 'YouRx',
+    backendRepo: 'https://github.com/victoria-huang/yourx-backend',
+    frontendRepo: 'https://github.com/victoria-huang/yourx-frontend',
     url: '',
     image: '',
     tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS'],
-    description: 'A platform to streamline attendance tracking.',
-    current: true
+    description: 'Your virtual pillbox, designed to allow you to easily take control of your health.',
+    current: false
   },
   {
     name: 'Flatiron Field Day',
@@ -17,16 +17,6 @@ export const allProjects = [
     image: '',
     tech: ['Node', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
     description: "Interactive experience based on Reddit's r/place.",
-    current: false
-  },
-  {
-    name: 'YouRx',
-    backendRepo: 'https://github.com/victoria-huang/yourx-backend',
-    frontendRepo: 'https://github.com/victoria-huang/yourx-frontend',
-    url: '',
-    image: '',
-    tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS'],
-    description: 'Your virtual pillbox, designed to allow you to easily take control of your health.',
     current: false
   },
   {
@@ -58,6 +48,16 @@ export const allProjects = [
     tech: ['Rails', 'Ruby', 'CSS'],
     description: 'A platform for peer-to-peer lending of items.',
     current: false
+  },
+  {
+    name: 'Attendance Tracker',
+    backendRepo: 'https://github.com/victoria-huang/attendance-bot',
+    frontendRepo: '',
+    url: '',
+    image: '',
+    tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS'],
+    description: 'A platform to streamline attendance tracking.',
+    current: true
   },
   {
     name: 'Interaction Checker',

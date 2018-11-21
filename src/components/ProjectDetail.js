@@ -23,21 +23,41 @@ class ProjectDetail extends Component {
         { this.props.current && <p className='wip'>work in progress</p> }
         <p>{ this.props.description }</p>
         <p>Built with { this.props.tech.join(', ') }</p>
-        { this.props.url && <button className='button'>Experience</button> }
+        { this.props.url 
+          && 
+          <a href={this.props.url} target="_blank" rel="noopener noreferrer">
+            <button className='button'>Experience</button> 
+          </a>
+        }
 
         {
           (this.props.frontendRepo && this.props.backendRepo)
           &&
           <Fragment>
-            <button className='button'>Frontend Repo</button>
-            <button className='button'>Backend Repo</button>
+            <a href={this.props.frontendRepo} target="_blank" rel="noopener noreferrer">
+              <button className='button'>Frontend Repo</button>
+            </a>
+
+            <a href={this.props.backendRepo} target="_blank" rel="noopener noreferrer">
+              <button className='button'>Backend Repo</button>
+             </a>
           </Fragment>
         }
 
         {
-          ((this.props.frontendRepo && !this.props.backendRepo) || (this.props.backendRepo && !this.props.frontendRepo))
+          (this.props.frontendRepo && !this.props.backendRepo)
             &&
-            <button className='button'>Repo</button>
+            <a href={this.props.frontendRepo} target="_blank" rel="noopener noreferrer">
+              <button className='button'>Repo</button>
+            </a>
+        }
+
+        {
+          (this.props.backendRepo && !this.props.frontendRepo)
+            &&
+            <a href={this.props.backendRepo} target="_blank" rel="noopener noreferrer">
+              <button className='button'>Repo</button>
+            </a>
         }
 
         <p className='back' onClick={ this.props.handleClick }>{'< Back >'}</p>
