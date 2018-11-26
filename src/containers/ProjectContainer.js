@@ -28,7 +28,7 @@ class ProjectContainer extends Component {
     if (idx < 0) idx = 0
 
     if (idx > (allProjects.length - 1) ) idx = allProjects.length - 1
-
+    
     this.setState({
       active: idx
     }, () => {
@@ -60,7 +60,7 @@ class ProjectContainer extends Component {
               </h1>
             </a>
           </div>
-
+          
           <Parallax scrolling={ false } ref={ this.setParallax } pages={ allProjects.length }>
             <div className='container'>
               { this.renderProjects() }
