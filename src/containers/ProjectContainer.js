@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
 import debounce from 'lodash/debounce'
+import { RiseLoader } from 'react-spinners';
 // import throttle from 'lodash/throttle'
 
 class ProjectContainer extends Component {
@@ -15,13 +16,14 @@ class ProjectContainer extends Component {
     this.setParallax = ref => { this.parallax = ref }
 
     this.state = {
-      active: 0
+      active: 0,
+      scrolling: false
     }
   }
 
   renderProjects = () => {
     return allProjects.map( (project, idx) =>
-      <Project key={ v4() } { ...project } offset={ idx } last={ idx === allProjects.length - 1 } />
+      <Project key={ v4() } { ...project } scrolling={ this.state.scrolling } offset={ idx } last={ idx === allProjects.length - 1 } />
     )
   }
 
@@ -29,9 +31,15 @@ class ProjectContainer extends Component {
     if ( idx < 0 || idx > allProjects.length - 1 ) return    
    
     this.setState({
-      active: idx
+      scrolling: true
     }, () => {
-      this.parallax.scrollTo(idx)
+      setTimeout(() => 
+        this.setState({ 
+          scrolling: false, 
+          active: idx 
+        }, () => { 
+          this.parallax.scrollTo(idx) 
+        }), 500)
     })
   }
 
@@ -52,9 +60,19 @@ class ProjectContainer extends Component {
             <a>
               <h1 className='large' onClick={ () => this.handlePageChange(this.state.active - 1) }>
                 {
-                  this.state.active > 0
+                  (this.state.active > 0 && !this.state.scrolling)
                   &&
                   `Previous: ${allProjects[this.state.active - 1].name}`
+                }
+
+                { this.state.scrolling
+                  &&
+                  <RiseLoader
+                    sizeUnit={"px"}
+                    size={40}
+                    color={'white'}
+                    loading={ this.state.scrolling }
+                  />
                 }
               </h1>
             </a>
@@ -70,9 +88,19 @@ class ProjectContainer extends Component {
             <a>
               <h1 className='large' onClick={ () => this.handlePageChange(this.state.active + 1) }>
                 {
-                  this.state.active < (allProjects.length - 1)
+                  (this.state.active < allProjects.length - 1 && !this.state.scrolling)
                   &&
                   `Next: ${allProjects[this.state.active + 1].name}`
+                }
+
+                { this.state.scrolling
+                  &&
+                  <RiseLoader
+                    sizeUnit={"px"}
+                    size={40}
+                    color={'white'}
+                    loading={ this.state.scrolling }
+                  />
                 }
               </h1>
             </a>

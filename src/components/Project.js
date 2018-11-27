@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { ParallaxLayer } from 'react-spring/dist/addons'
 import { Link } from 'react-router-dom'
 import ProjectDetail from './ProjectDetail'
+import { MoonLoader } from 'react-spinners';
 
 class Project extends Component {
   state = {
@@ -36,8 +37,21 @@ class Project extends Component {
             :
               <div>
                 <span className='overlay-text'>
-                  <h1 onClick={ this.handleClick } style={{cursor: 'pointer'}} className='large'>{ this.props.name }</h1>
-                  <button className='trigger' onClick={ this.handleClick }>Learn more.</button>
+                  { this.props.scrolling ? 
+                    <MoonLoader
+                      sizeUnit={"px"}
+                      size={100}
+                      color={'white'}
+                      loading={ this.props.scrolling }
+                    />
+                    :
+                    <Fragment>
+                      <h1 onClick={ this.handleClick } style={{cursor: 'pointer'}} className='large'>
+                        {this.props.name}
+                      </h1>
+                      <button className='trigger' onClick={ this.handleClick }>Learn more.</button>
+                    </Fragment>
+                  }
                 </span>
                 <img onClick={ this.handleClick } className='project-image' src={ this.props.image ?
                   `assets/${this.props.image}`
