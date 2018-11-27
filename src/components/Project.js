@@ -14,17 +14,17 @@ class Project extends Component {
     }))
   }
 
-  componentDidMount() {
-    console.log('proj mount');
-  }
+  // componentDidMount() {
+  //   console.log('proj mount');
+  // }
 
-  componentDidUpdate() {
-    console.log('update');
-  }
+  // componentDidUpdate() {
+  //   console.log('update');
+  // }
 
-  componentWillUnmount() {
-    console.log('proj unmount');
-  }
+  // componentWillUnmount() {
+  //   console.log('proj unmount');
+  // }
 
   render() {
     return (
