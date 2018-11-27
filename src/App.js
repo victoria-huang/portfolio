@@ -7,6 +7,7 @@ import { Transition } from 'react-spring'
 import Nav from './components/Nav'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
+// import * as easings from 'd3-ease'
 
 class App extends Component {
   // onDestroyed={() => console.log('destroyed')}
@@ -21,12 +22,13 @@ class App extends Component {
               <div className="content">
                 <Transition
                   native
-                  config={{ tension: 1, friction: 10, delay: 1000 }}
+                  items={ location }
+                  config={{ duration: 800 }}
                   keys={ location.pathname.split('/').filter(a => a)[0] }
-                  from={{ willChange: 'opacity', opacity: 0 }}
+                  from={{ opacity: 0 }}
                   enter={{ opacity: 1 }}
                   leave={{ opacity: 0 }}>
-                  {style => (
+                  {location => style => (
                     <Switch location={location}>
                       <Route exact path="/" render={props => <Banner { ...props } style={ style } /> } />
                       <Route path="/about" render={props => <AboutContainer { ...props } style={ style } /> } />

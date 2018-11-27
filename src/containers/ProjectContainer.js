@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { animated, Parallax } from 'react-spring'
+import { animated } from 'react-spring'
+import { Parallax } from 'react-spring/dist/addons'
 import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
@@ -25,10 +26,8 @@ class ProjectContainer extends Component {
   }
 
   handlePageChange = idx => {
-    if (idx < 0) idx = 0
-
-    if (idx > (allProjects.length - 1) ) idx = allProjects.length - 1
-    
+    if ( idx < 0 || idx > allProjects.length - 1 ) return    
+   
     this.setState({
       active: idx
     }, () => {

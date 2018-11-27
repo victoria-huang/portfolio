@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ParallaxLayer } from 'react-spring'
+import { ParallaxLayer } from 'react-spring/dist/addons'
 import { Link } from 'react-router-dom'
 import ProjectDetail from './ProjectDetail'
 
