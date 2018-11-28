@@ -63,7 +63,8 @@ class Project extends Component {
         </div>
 
         {
-          this.props.last &&
+          (this.props.last && !this.props.scrolling)
+          &&
           <span className='bottom-button'>
             <Link to='/contact'>
               <button className='button-2'>Contact me.</button>

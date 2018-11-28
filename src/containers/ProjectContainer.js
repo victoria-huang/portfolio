@@ -69,7 +69,7 @@ class ProjectContainer extends Component {
                   &&
                   <RiseLoader
                     sizeUnit={"px"}
-                    size={40}
+                    size={33}
                     color={'white'}
                     loading={ this.state.scrolling }
                   />
@@ -97,7 +97,7 @@ class ProjectContainer extends Component {
                   &&
                   <RiseLoader
                     sizeUnit={"px"}
-                    size={40}
+                    size={33}
                     color={'white'}
                     loading={ this.state.scrolling }
                   />
