@@ -6,7 +6,6 @@ import { allProjects } from '../projects'
 import v4 from 'uuid'
 import debounce from 'lodash/debounce'
 import { RiseLoader } from 'react-spinners';
-// import throttle from 'lodash/throttle'
 
 class ProjectContainer extends Component {
   constructor() {

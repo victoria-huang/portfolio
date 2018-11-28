@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { animated } from 'react-spring'
 import sr from './ScrollReveal'
-// import TrailText from './TrailText'
 
 class Banner extends Component {
   state = {
@@ -59,8 +58,6 @@ class Banner extends Component {
             </h1>
 
             <hr className='white-hr' style={{ width: '200px' }} />
-
-            {/* this.state.mouseOver && <TrailText /> */}
           </div>
         </animated.div>
     )

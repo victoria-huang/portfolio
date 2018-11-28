@@ -25,10 +25,6 @@ h3 {
   font-size: 2em;
 }
 
-/* p {
-  font-size: 1.2em;
-} */
-
 .emphasize {
   color: orange;
   letter-spacing: 2.5px;
@@ -78,26 +74,18 @@ h3 {
 }
 
 .column-left {
-  /* border-right: 3px solid #525252;
-  border-top: 3px solid #525252;
-  border-bottom: 3px solid #525252; */
   width: 65%;
   padding: 2%;
   line-height: 1.8;
-  /* background-color: rgba(0, 0, 0, 0.65); */
   text-align: left;
 }
 
 .column-right {
-  /* border-left: 3px solid #525252;
-  border-top: 3px solid #525252;
-  border-bottom: 3px solid #525252; */
   width: 35%;
   padding: 2%;
   display: block;
   position: relative;
   overflow: hidden;
-  /* background-color: white; */
 }
 
 .overlay-text {
@@ -153,21 +141,6 @@ h3 {
   width: 100%;
   height: 100%;
 }
-
-/* .column-left img {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-/* .center {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-  transform: perspective(1px) translateY(-50%);
-  top: 50%;
-  text-align: center;
-} */
 
 .header {
   font-family: 'Cormorant Garamond', serif;
@@ -225,17 +198,6 @@ h3 {
   cursor: pointer;
 }
 
-/* .navDots {
-  position: absolute;
-  width: 100%;
-  bottom: 20%;
-  z-index: 1000;
-}
-
-.navDot {
-  padding: 10px;
-  cursor: pointer;
-} */
 button {
   display: inline-block;
   position: relative;
@@ -247,7 +209,6 @@ button {
   font-family: 'Cormorant Garamond', serif;
   cursor: pointer;
   padding: 10px;
-  /* background: rgba(0,0,0,0.09); */
 }
 
 .button {
@@ -266,10 +227,6 @@ button {
 button:hover {
   border-width: 3px;
 }
-
-/* .button:hover {
-  border-width: 3px;
-} */
 
 .arrow a {
   text-decoration: none;
@@ -309,7 +266,6 @@ button:hover {
 /************************  Hamburger Menu  **********************************/
 nav {
   position: absolute;
-  /* height: 100%; */
   width: 100%;
 }
 
@@ -317,7 +273,6 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
-  /* position: relative; */
 }
 
 a:hover {
@@ -334,13 +289,11 @@ a:hover {
 
 #menuToggle {
   display: block;
-  /* height: 100%; */
-  /* width: 100%; */
   position: relative;
   top: 30px;
   left: 30px;
 
-  z-index: 1;
+  z-index: 3000;
 
   -webkit-user-select: none;
   user-select: none;
@@ -358,7 +311,7 @@ a:hover {
   cursor: pointer;
 
   opacity: 0; /* hide this */
-  z-index: 2;  /* and place it over the hamburger */
+  z-index: 4000;  /* and place it over the hamburger */
 
   -webkit-touch-callout: none;
 }
@@ -376,7 +329,7 @@ a:hover {
   background: #cdcdcd;
   border-radius: 3px;
 
-  z-index: 1;
+  z-index: 3000;
 
   transform-origin: 4px 0px;
 
@@ -429,7 +382,6 @@ a:hover {
   padding: 50px;
   padding-top: 70px;
   padding-bottom: 20px;
-  /* border-radius: 25px; */
 
   background: rgba(200, 200, 200, 0.8);
   list-style-type: none;
@@ -443,7 +395,6 @@ a:hover {
 }
 
 #menu a {
-  /* padding: 10px 0; */
   padding: 8px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
@@ -465,11 +416,6 @@ a:hover {
 
 /*****************************************************************************/
 
-/* #root {
-  font-family: 'Kanit', sans-serif;
-  line-height: 0px;
-} */
-
 .fill {
   position: relative;
   width: 100%;
@@ -483,7 +429,6 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* min-height: calc(100vh * 1.5); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,18 +440,14 @@ a:hover {
 
 .subRoute {
   position: absolute;
-  /* left: 0;
-  top: 100%; */
   width: 100%;
   height: 100%;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 .content {
   flex: 1;
-  /* font-size: 50px; */
   color: white;
   height: 100%;
 }
@@ -550,110 +491,6 @@ a:hover {
   color: black;
   border: 1px solid black;
 }
-
-/* .nav {
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  height: 40px;
-  display: flex;
-  background-color: white;
-  z-index: 1;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-.navItem {
-  text-align: center;
-  align-self: center;
-  flex: 1;
-  list-style-type: none;
-  padding: 10px;
-}
-
-.navItemUltra {
-  margin-top: 64px;
-} */
-
-
-/* .banner-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.banner-image {
-  width: 100vw;
-  height: 150vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-children {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  font-weight: normal;
-  font-size: 6vw;
-}
-
-.root-style {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: space-around;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-}
-
-.copy {
-  margin: 0.2em 0;
-  text-align: center;
-  font-size: 6vw;
-}
-
-.letter {
-    display: inline-block;
-} */
-
-/*  */
-/* .header {
-  position: absolute;
-}
-
-.new {
-  opacity: 0;
-}
-
-.old, .new {
-  transition: opacity 0.5s linear;
-}
-
-.wrap:hover .old {
-  opacity: 0;
-}
-
-.wrap:hover .new {
-  opacity: 1;
-} */
-/*  */
-
-/* .container {
-  width: 90%;
-  margin: auto;
-} */
 
 @media only screen and (max-width: 1100px) {
   .column-left {
@@ -725,6 +562,8 @@ h1 {
     padding: 5px;
   }
 }
+
+/************** MEDIA QUERIES **************/
 
 @media only screen and (max-height: 800px) {
   h2 {
