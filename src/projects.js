@@ -1,5 +1,15 @@
 export const allProjects = [
   {
+    name: 'Portfolio',
+    backendRepo: '',
+    frontendRepo: 'https://github.com/victoria-huang/portfolio',
+    url: '',
+    image: '',
+    tech: ['React', 'JavaScript', 'CSS'],
+    description: 'Your current location; my personal website.',
+    current: false
+  },
+  {
     name: 'YouRx',
     backendRepo: 'https://github.com/victoria-huang/yourx-backend',
     frontendRepo: 'https://github.com/victoria-huang/yourx-frontend',
