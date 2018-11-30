@@ -7,10 +7,8 @@ import { Transition } from 'react-spring'
 import Nav from './components/Nav'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
-// import * as easings from 'd3-ease'
 
 class App extends Component {
-  // onDestroyed={() => console.log('destroyed')}
   render() {
     return (
       <Router>
