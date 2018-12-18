@@ -4,7 +4,7 @@ export const allProjects = [
     backendRepo: '',
     frontendRepo: 'https://github.com/victoria-huang/portfolio',
     url: '',
-    image: '',
+    image: 'profile.jpg',
     tech: ['React', 'JavaScript', 'CSS'],
     description: 'Your current location; my personal website.',
     current: false
@@ -44,7 +44,7 @@ export const allProjects = [
     backendRepo: 'https://github.com/victoria-huang/unleashed-backend',
     frontendRepo: 'https://github.com/victoria-huang/unleashed-frontend',
     url: 'http://unleashedcheeto.herokuapp.com/',
-    image: '',
+    image: 'unleashed.png',
     tech: ['JavaScript', 'Rails', 'Ruby', 'CSS'],
     description: 'Cheeto the pug has misplaced his belongings around New York City -- help him retrieve them!',
     current: false
