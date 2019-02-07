@@ -124,7 +124,28 @@ button:hover {
   color: #A9A9A9;
 }
 
-.trigger {
+.learn {
+  display: inline-block;
+}
+
+.learn:after {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  cursor: pointer;
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+.learn:hover:after {
+  width: 100%;
+}
+
+/* .trigger {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   color: black;
@@ -133,7 +154,7 @@ button:hover {
   transition: border-width 0.2s linear;
   letter-spacing: 0;
   cursor: pointer;
-}
+} */
 
 .large {
   font-size: 5em;

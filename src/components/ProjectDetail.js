@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import sr from './ScrollReveal'
+import Parser from 'html-react-parser'
 
 class ProjectDetail extends Component {
   componentDidMount = () => {
@@ -21,13 +22,20 @@ class ProjectDetail extends Component {
         <h1 className="project-header">{ this.props.name }</h1>
         <hr className='white-hr' style={{ width: '200px' }} />
         { this.props.current && <p className='wip'>work in progress</p> }
-        <p>{ this.props.description }</p>
+        <p>{ Parser(this.props.description) }</p>
         <p>Built with { this.props.tech.join(', ') }</p>
         { this.props.url 
           && 
           <a href={this.props.url} target="_blank" rel="noopener noreferrer">
             <button className='button'>Experience</button> 
           </a>
+        }
+
+        { this.props.video
+          &&
+          <a href={this.props.video} target="_blank" rel="noopener noreferrer">
+          <button className='button'>Video Demo</button> 
+        </a>
         }
 
         {

@@ -21,7 +21,7 @@ class App extends Component {
                 <Transition
                   native
                   items={ location }
-                  config={{ duration: 800 }}
+                  config={{ duration: 1000 }}
                   keys={ location.pathname.split('/').filter(a => a)[0] }
                   from={{ opacity: 0 }}
                   enter={{ opacity: 1 }}

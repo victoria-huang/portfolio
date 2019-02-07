@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { ParallaxLayer } from 'react-spring/dist/addons'
 import { Link } from 'react-router-dom'
 import ProjectDetail from './ProjectDetail'
-import { MoonLoader } from 'react-spinners';
+import { MoonLoader } from 'react-spinners'
 
 class Project extends Component {
   state = {
@@ -21,7 +21,7 @@ class Project extends Component {
         <div className='container-item'>
           {
             this.state.isClicked ?
-              <ProjectDetail handleClick={ this.handleClick} { ...this.props} />
+              <ProjectDetail handleClick={ this.handleClick } { ...this.props} />
             :
               <div>
                 <span className='overlay-text'>
@@ -37,15 +37,18 @@ class Project extends Component {
                       <h1 onClick={ this.handleClick } style={{cursor: 'pointer'}} className='large'>
                         {this.props.name}
                       </h1>
-                      <button className='trigger' onClick={ this.handleClick }>Learn more.</button>
+                      <a className='learn back' onClick={ this.handleClick }>Learn more.</a>
                     </Fragment>
                   }
                 </span>
-                <img onClick={ this.handleClick } className='project-image' src={ this.props.image ?
-                  `assets/${this.props.image}`
-                  :
-                  'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
-                } alt={ `${this.props.name} preview` } />
+                { !this.props.scrolling 
+                  &&
+                  <img onClick={ this.handleClick } className='project-image' src={ this.props.image ?
+                    `assets/${this.props.image}`
+                    :
+                    'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
+                  } alt={ `${this.props.name} preview` } />
+                }
               </div>
           }
         </div>

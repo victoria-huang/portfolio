@@ -44,7 +44,7 @@ class ProjectContainer extends Component {
 
   debounceWheel = debounce( idx => {
     this.handlePageChange(idx)
-  }, 50)
+  }, 55)
 
   handleWheel = e => {
     if (e.deltaY > 0) this.debounceWheel(this.state.active + 1)
@@ -64,7 +64,7 @@ class ProjectContainer extends Component {
                   `Previous: ${allProjects[this.state.active - 1].name}`
                 }
 
-                { this.state.scrolling
+                { /*this.state.scrolling
                   &&
                   <RiseLoader
                     sizeUnit={"px"}
@@ -72,7 +72,7 @@ class ProjectContainer extends Component {
                     color={'white'}
                     loading={ this.state.scrolling }
                   />
-                }
+                */}
               </h1>
             </a>
           </div>
@@ -92,7 +92,7 @@ class ProjectContainer extends Component {
                   `Next: ${allProjects[this.state.active + 1].name}`
                 }
 
-                { this.state.scrolling
+                { /* this.state.scrolling
                   &&
                   <RiseLoader
                     sizeUnit={"px"}
@@ -100,7 +100,7 @@ class ProjectContainer extends Component {
                     color={'white'}
                     loading={ this.state.scrolling }
                   />
-                }
+                */}
               </h1>
             </a>
           </div>
