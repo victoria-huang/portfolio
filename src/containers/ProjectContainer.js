@@ -5,7 +5,6 @@ import Project from '../components/Project'
 import { allProjects } from '../projects'
 import v4 from 'uuid'
 import debounce from 'lodash/debounce'
-import { RiseLoader } from 'react-spinners';
 
 class ProjectContainer extends Component {
   constructor() {
@@ -22,7 +21,13 @@ class ProjectContainer extends Component {
 
   renderProjects = () => {
     return allProjects.map( (project, idx) =>
-      <Project key={ v4() } { ...project } scrolling={ this.state.scrolling } offset={ idx } last={ idx === allProjects.length - 1 } />
+      <Project 
+        key={ v4() } 
+        { ...project } 
+        scrolling={ this.state.scrolling } 
+        offset={ idx } 
+        last={ idx === allProjects.length - 1 } 
+      />
     )
   }
 
@@ -63,16 +68,6 @@ class ProjectContainer extends Component {
                   &&
                   `Previous: ${allProjects[this.state.active - 1].name}`
                 }
-
-                { /*this.state.scrolling
-                  &&
-                  <RiseLoader
-                    sizeUnit={"px"}
-                    size={33}
-                    color={'white'}
-                    loading={ this.state.scrolling }
-                  />
-                */}
               </h1>
             </a>
           </div>
@@ -91,16 +86,6 @@ class ProjectContainer extends Component {
                   &&
                   `Next: ${allProjects[this.state.active + 1].name}`
                 }
-
-                { /* this.state.scrolling
-                  &&
-                  <RiseLoader
-                    sizeUnit={"px"}
-                    size={33}
-                    color={'white'}
-                    loading={ this.state.scrolling }
-                  />
-                */}
               </h1>
             </a>
           </div>

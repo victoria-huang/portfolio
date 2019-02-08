@@ -32,7 +32,7 @@ class App extends Component {
                       <Route path="/about" render={props => <AboutContainer { ...props } style={ style } /> } />
                       <Route path= "/portfolio" render={props => <ProjectContainer { ...props } style={ style } /> } />
                       <Route path="/contact" render={props => <Contact { ...props } style={ style } /> } />
-                      <Route render={() => <div className='mainRoute' style={{ background:'#000000' }}><h1>Page Not Found</h1></div>} />
+                      <Route render={ () => <div className='mainRoute' style={{ background:'#000000' } }><h1>Page Not Found</h1></div>} />
                     </Switch>
                   )}
                 </Transition>

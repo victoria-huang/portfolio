@@ -24,18 +24,20 @@ class ProjectDetail extends Component {
         { this.props.current && <p className='wip'>work in progress</p> }
         <p>{ Parser(this.props.description) }</p>
         <p>Built with { this.props.tech.join(', ') }</p>
-        { this.props.url 
+        { 
+          this.props.url 
           && 
           <a href={this.props.url} target="_blank" rel="noopener noreferrer">
             <button className='button'>Experience</button> 
           </a>
         }
 
-        { this.props.video
+        { 
+          this.props.video
           &&
           <a href={this.props.video} target="_blank" rel="noopener noreferrer">
-          <button className='button'>Video Demo</button> 
-        </a>
+            <button className='button'>Video Demo</button> 
+          </a>
         }
 
         {

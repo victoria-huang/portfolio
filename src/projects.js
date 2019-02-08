@@ -5,7 +5,7 @@ export const allProjects = [
     frontendRepo: 'https://github.com/victoria-huang/portfolio',
     url: null,
     video: null,
-    image: 'portfolio.jpeg',
+    image: 'portfolio.jpg',
     tech: ['React', 'JavaScript', 'CSS'],
     description: 'Your current location; my personal website.',
     current: false
@@ -60,7 +60,7 @@ export const allProjects = [
     frontendRepo: 'https://github.com/jdbean/lend-to-friend',
     url: 'https://pacific-earth-11787.herokuapp.com/',
     video: null,
-    image: 'lend-to-friend-img.jpeg',
+    image: 'lend-to-friend.jpg',
     tech: ['Rails', 'Ruby', 'CSS'],
     description: 'A platform for peer-to-peer lending of items.<br/><br/>Experience with:<br/>username: lf@lf.com<br/>password: password',
     current: false
