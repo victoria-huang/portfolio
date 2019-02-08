@@ -145,17 +145,6 @@ button:hover {
   width: 100%;
 }
 
-/* .trigger {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  color: black;
-  border: 2px solid rgba(200, 200, 200, 0.3);
-  background-color: rgba(200, 200, 200, 0.8);
-  transition: border-width 0.2s linear;
-  letter-spacing: 0;
-  cursor: pointer;
-} */
-
 .large {
   font-size: 5em;
 }
@@ -371,8 +360,8 @@ a:hover {
 
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 27px;
+  height: 2px;
   margin-bottom: 5px;
   position: relative;
   background: #cdcdcd;
