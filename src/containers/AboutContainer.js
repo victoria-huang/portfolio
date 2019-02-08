@@ -8,7 +8,7 @@ class AboutContainer extends React.Component {
     return (
       <animated.div className='mainRoute bg' style={{ ...this.props.style }}>
         <div className='mainRouteItem layer'>
-            <About />
+          <About />
 
           <Link to='/portfolio'>
             <button className='button'>View my projects.</button>
@@ -17,6 +17,10 @@ class AboutContainer extends React.Component {
           <a href='' target="_blank" rel="noopener noreferrer">
             <button className='button'>See my resume.</button>
           </a>
+
+          <Link to='/contact'>
+            <button className='button'>Contact me.</button>
+          </Link>
         </div>
       </animated.div>
     )
