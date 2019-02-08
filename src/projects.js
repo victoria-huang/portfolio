@@ -70,7 +70,7 @@ export const allProjects = [
     backendRepo: null,
     frontendRepo: 'https://github.com/victoria-huang/module-one-final-project-guidelines-nyc-web-031218',
     url: null,
-    video: '',
+    video: 'https://youtu.be/IQ_5uKdeb_I',
     image: 'interaction.jpg',
     tech: ['Ruby'],
     description: 'A command line application that ensures medication safety and checks for possible drug interactions.',
