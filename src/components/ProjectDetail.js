@@ -41,31 +41,9 @@ class ProjectDetail extends Component {
         }
 
         {
-          (this.props.frontendRepo && this.props.backendRepo)
-          &&
-          <Fragment>
-            <a href={this.props.frontendRepo} target="_blank" rel="noopener noreferrer">
-              <button className='button'>Frontend Repo</button>
-            </a>
-
-            <a href={this.props.backendRepo} target="_blank" rel="noopener noreferrer">
-              <button className='button'>Backend Repo</button>
-             </a>
-          </Fragment>
-        }
-
-        {
-          (this.props.frontendRepo && !this.props.backendRepo)
+          (this.props.repo)
             &&
-            <a href={this.props.frontendRepo} target="_blank" rel="noopener noreferrer">
-              <button className='button'>Repo</button>
-            </a>
-        }
-
-        {
-          (this.props.backendRepo && !this.props.frontendRepo)
-            &&
-            <a href={this.props.backendRepo} target="_blank" rel="noopener noreferrer">
+            <a href={this.props.repo} target="_blank" rel="noopener noreferrer">
               <button className='button'>Repo</button>
             </a>
         }

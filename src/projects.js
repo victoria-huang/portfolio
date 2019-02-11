@@ -1,8 +1,7 @@
 export const allProjects = [
   {
     name: 'Portfolio',
-    backendRepo: null,
-    frontendRepo: 'https://github.com/victoria-huang/portfolio',
+    repo: 'https://github.com/victoria-huang/portfolio',
     url: null,
     video: null,
     image: 'portfolio.jpg',
@@ -12,8 +11,7 @@ export const allProjects = [
   },
   {
     name: 'YouRx',
-    backendRepo: '',
-    frontendRepo: 'https://github.com/victoria-huang/yourx-v1',
+    repo: 'https://github.com/victoria-huang/yourx-v1',
     url: null,
     video: 'https://youtu.be/I5FhDrszFVc',
     image: 'yourx.jpg',
@@ -22,20 +20,8 @@ export const allProjects = [
     current: false
   },
   {
-    name: 'Flatiron Field Day',
-    backendRepo: null,
-    frontendRepo: 'https://github.com/DanielSeehausen/fi-field-day/',
-    url: null,
-    video: 'https://www.youtube.com/watch?v=SUHqKTfCp6A&feature=youtu.be',
-    image: 'field_day.gif',
-    tech: ['Node.js', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
-    description: "Interactive experience based on Reddit's r/place.",
-    current: false
-  },
-  {
     name: 'Cloud Closet',
-    backendRepo: '',
-    frontendRepo: 'https://github.com/victoria-huang/cloud-closet',
+    repo: 'https://github.com/victoria-huang/cloud-closet',
     url: null,
     video: 'https://youtu.be/PrJv9DQ89r4',
     image: 'closet.jpg',
@@ -45,8 +31,7 @@ export const allProjects = [
   },
   {
     name: 'Unleashed',
-    backendRepo: '',
-    frontendRepo: 'https://github.com/victoria-huang/unleashed',
+    repo: 'https://github.com/victoria-huang/unleashed',
     url: 'http://unleashedcheeto.herokuapp.com/',
     video: null,
     image: 'unleashed.jpg',
@@ -56,8 +41,7 @@ export const allProjects = [
   },
   {
     name: 'Lend-to-Friend',
-    backendRepo: null,
-    frontendRepo: 'https://github.com/victoria-huang/lend-to-friend',
+    repo: 'https://github.com/victoria-huang/lend-to-friend',
     url: 'https://pacific-earth-11787.herokuapp.com/',
     video: null,
     image: 'lend-to-friend.jpg',
@@ -66,9 +50,18 @@ export const allProjects = [
     current: false
   },
   {
+    name: 'Flatiron Field Day',
+    repo: 'https://github.com/DanielSeehausen/fi-field-day/',
+    url: null,
+    video: 'https://www.youtube.com/watch?v=SUHqKTfCp6A&feature=youtu.be',
+    image: 'field_day.gif',
+    tech: ['Node.js', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
+    description: "Interactive experience based on Reddit's r/place.",
+    current: false
+  },
+  {
     name: 'Prescription Organizer',
-    backendRepo: null,
-    frontendRepo: 'https://github.com/victoria-huang/prescription-organizer',
+    repo: 'https://github.com/victoria-huang/prescription-organizer',
     url: null,
     video: 'https://youtu.be/IQ_5uKdeb_I',
     image: 'interaction.jpg',
@@ -78,8 +71,7 @@ export const allProjects = [
   },
   // {
   //   name: 'Poker CLI',
-  //   backendRepo: '',
-  //   frontendRepo: '',
+  //   repo: '',
   //   url: '',
   //   video: '',
   //   image: '',
