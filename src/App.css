@@ -155,7 +155,7 @@ button:hover {
 }
 
 .bg {
-  background-image: url('./cover.jpg');
+  background-image: url('https://s3.amazonaws.com/victoria-huang-portfolio/cover.jpg');
   background-size: cover;
 }
 

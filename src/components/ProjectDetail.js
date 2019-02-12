@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import sr from './ScrollReveal'
 import Parser from 'html-react-parser'
 

@@ -4,7 +4,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/portfolio',
     url: null,
     video: null,
-    image: 'portfolio.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/portfolio.jpg',
     tech: ['React', 'JavaScript', 'CSS'],
     description: 'Your current location; my personal website.',
     current: false
@@ -14,7 +14,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/yourx-v1',
     url: null,
     video: 'https://youtu.be/I5FhDrszFVc',
-    image: 'yourx.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/yourx.jpg',
     tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS', 'RxNav (NIH, NLM) APIs'],
     description: 'Your virtual pillbox, designed to allow you to easily take control of your health.',
     current: false
@@ -24,7 +24,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/cloud-closet',
     url: null,
     video: 'https://youtu.be/PrJv9DQ89r4',
-    image: 'closet.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/closet.jpg',
     tech: ['React Native', 'JavaScript', 'Rails', 'Ruby', 'CSS'],
     description: 'A virtual closet designed to help organize clothing and plan outfits.',
     current: false
@@ -34,7 +34,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/unleashed',
     url: 'http://unleashedcheeto.herokuapp.com/',
     video: null,
-    image: 'unleashed.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/unleashed.jpg',
     tech: ['JavaScript', 'Rails', 'Ruby', 'CSS', 'Leaflet'],
     description: 'Cheeto the pug has misplaced his belongings around New York City -- help him retrieve them!',
     current: false
@@ -44,7 +44,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/lend-to-friend',
     url: 'https://pacific-earth-11787.herokuapp.com/',
     video: null,
-    image: 'lend-to-friend.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/lend-to-friend.jpg',
     tech: ['Rails', 'Ruby', 'CSS'],
     description: 'A platform for peer-to-peer lending of items.<br/><br/>Experience with:<br/>username: lf@lf.com<br/>password: password',
     current: false
@@ -54,7 +54,7 @@ export const allProjects = [
     repo: 'https://github.com/DanielSeehausen/fi-field-day/',
     url: null,
     video: 'https://www.youtube.com/watch?v=SUHqKTfCp6A&feature=youtu.be',
-    image: 'field_day.gif',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/field_day.gif',
     tech: ['Node.js', 'React', 'JavaScript', 'Canvas', 'Websockets', 'CSS'],
     description: "Interactive experience based on Reddit's r/place.",
     current: false
@@ -64,7 +64,7 @@ export const allProjects = [
     repo: 'https://github.com/victoria-huang/prescription-organizer',
     url: null,
     video: 'https://youtu.be/IQ_5uKdeb_I',
-    image: 'interaction.jpg',
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/interaction.jpg',
     tech: ['Ruby', 'RxNav (NIH, NLM) APIs'],
     description: 'A command line application that ensures medication safety and checks for possible drug interactions.',
     current: false

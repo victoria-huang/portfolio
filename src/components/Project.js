@@ -43,11 +43,7 @@ class Project extends Component {
                 </span>
                 { !this.props.scrolling 
                   &&
-                  <img onClick={ this.handleClick } className='project-image' src={ this.props.image ?
-                    `assets/${this.props.image}`
-                    :
-                    'https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&h=350'
-                  } alt={ `${this.props.name} preview` } />
+                  <img onClick={ this.handleClick } className='project-image' src={ this.props.image } alt={ `${this.props.name} preview` } />
                 }
               </div>
           }
