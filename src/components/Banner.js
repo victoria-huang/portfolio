@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { animated } from 'react-spring'
 import sr from './ScrollReveal'
 
 class Banner extends Component {
@@ -34,32 +33,32 @@ class Banner extends Component {
 
   render() {
     return (
-        <animated.div className='mainRoute' style={{ ...this.props.style, background: `#1B1B1C` }}>
-          <div className='mainRouteItem'>
-            <h1
+      <div className='mainRouteItem app-header'>
+        <div>
+          <h1
               className='header'
               ref='header'
               onMouseEnter={ this.handleMouseEnter }
               onMouseLeave={ this.handleMouseLeave }
               onClick={ () => this.props.history.push('/about') }
               style={{ opacity: this.state.mouseOver ? 0 : 1, display: this.state.mouseOver ? 'none' : 'block' }}
-            >
+          >
               Victoria Huang
-            </h1>
+          </h1>
 
-            <h1
+          <h1
               className='header'
               onMouseEnter={ this.handleMouseEnter }
               onMouseLeave={ this.handleMouseLeave }
               onClick={ () => this.props.history.push('/about') }
               style={{ opacity: this.state.mouseOver ? 1 : 0, display: this.state.mouseOver ? 'block' : 'none' }}
-            >
+          >
               &nbsp;&nbsp;&nbsp; Who I Am &nbsp;&nbsp;&nbsp;
-            </h1>
+          </h1>
 
-            <hr className='white-hr' style={{ width: '200px' }} />
-          </div>
-        </animated.div>
+          <hr className='white-hr' style={{ width: '200px' }} />
+        </div>
+      </div>
     )
   }
 }

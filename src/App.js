@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Banner from './components/Banner'
+import Particle from './components/Particle'
 import AboutContainer from './containers/AboutContainer'
 import ProjectContainer from './containers/ProjectContainer'
 import Contact from './components/Contact'
@@ -28,7 +28,7 @@ class App extends Component {
                   leave={{ opacity: 0 }}>
                   {location => style => (
                     <Switch location={location}>
-                      <Route exact path="/" render={props => <Banner { ...props } style={ style } /> } />
+                      <Route exact path="/" render={props => <Particle { ...props } style={ style } /> } />
                       <Route path="/about" render={props => <AboutContainer { ...props } style={ style } /> } />
                       <Route path= "/portfolio" render={props => <ProjectContainer { ...props } style={ style } /> } />
                       <Route path="/contact" render={props => <Contact { ...props } style={ style } /> } />
