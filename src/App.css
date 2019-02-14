@@ -198,8 +198,7 @@ button:hover {
 }
 
 .particle canvas{
-  display:block;
-  vertical-align:bottom;
+  display: block;
   height: 100vh;
   position: absolute;
 }
