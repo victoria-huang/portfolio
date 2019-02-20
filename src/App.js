@@ -5,7 +5,7 @@ import ProjectContainer from './containers/ProjectContainer'
 import Contact from './components/Contact'
 import { Transition } from 'react-spring'
 import Nav from './components/Nav'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
