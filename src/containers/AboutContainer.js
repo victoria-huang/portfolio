@@ -14,7 +14,7 @@ class AboutContainer extends React.Component {
             <button className='button'>View my projects.</button>
           </Link>
 
-          <a href='' target="_blank" rel="noopener noreferrer">
+          <a href='https://s3.amazonaws.com/victoria-huang-portfolio/Victoria+Huang+Resume+2019.pdf' target="_blank" rel="noopener noreferrer">
             <button className='button'>See my resume.</button>
           </a>
 

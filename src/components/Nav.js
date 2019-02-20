@@ -14,7 +14,7 @@ const Nav = () => {
           <Link to='/'>Hello.</Link>
           <Link to='/about'>About.</Link>
           <Link to='/portfolio'>Portfolio.</Link>
-          <a href='' target="_blank" rel="noopener noreferrer">Resume.</a>
+          <a href='https://s3.amazonaws.com/victoria-huang-portfolio/Victoria+Huang+Resume+2019.pdf' target="_blank" rel="noopener noreferrer">Resume.</a>
           <Link to='/contact'>Contact.</Link>
         </div>
       </div>
