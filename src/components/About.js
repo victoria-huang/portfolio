@@ -15,7 +15,7 @@ const About = (props) => {
 
             <hr className='white-hr' />
 
-            <p>
+            <p className='tech'>
               JavaScript, React, React Native, Redux, Ruby, Rails, Java, SQL, HTML, CSS, Git
             </p>
           </div>

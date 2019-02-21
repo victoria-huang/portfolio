@@ -11,7 +11,7 @@ const Nav = () => {
           <span></span>
 
         <div id="menu">
-          <Link to='/'>Hello.</Link>
+          <Link to='/' className='size-hidden'>Hello.</Link>
           <Link to='/about'>About.</Link>
           <Link to='/portfolio'>Portfolio.</Link>
           <a href='https://s3.amazonaws.com/victoria-huang-portfolio/Victoria+Huang+Resume+2019.pdf' target="_blank" rel="noopener noreferrer">Resume.</a>

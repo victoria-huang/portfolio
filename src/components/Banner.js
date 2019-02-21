@@ -34,7 +34,7 @@ class Banner extends Component {
   render() {
     return (
       <div className='mainRouteItem app-header'>
-        <div>
+        <div className='mobile-hidden'>
           <h1
               className='header'
               ref='header'
@@ -54,6 +54,18 @@ class Banner extends Component {
               style={{ opacity: this.state.mouseOver ? 1 : 0, display: this.state.mouseOver ? 'block' : 'none' }}
           >
               &nbsp;&nbsp;&nbsp; Who I Am &nbsp;&nbsp;&nbsp;
+          </h1>
+
+          <hr className='white-hr' style={{ width: '200px' }} />
+        </div>
+
+        <div className='mobile-visible'>
+          <h1
+              className='header'
+              ref='header'
+              onClick={ () => this.props.history.push('/about') }
+          >
+              Victoria Huang
           </h1>
 
           <hr className='white-hr' style={{ width: '200px' }} />

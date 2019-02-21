@@ -6,7 +6,7 @@ const Contact = (props) => {
   return (
     <animated.div className='mainRoute' style={{ ...props.style, background: `#555555` }}>
       <div className='mainRouteItem contact'>
-        <h1>I would love to hear from you.</h1>
+        <h1 id='contact-header'>I would love to hear from you.</h1>
         <hr className='white-hr' style={{ width: '200px', marginBottom: '30px' }} />
 
         <a href="mailto:vctrah@gmail.com">
