@@ -37,7 +37,8 @@ class Project extends Component {
                       <h1 onClick={ this.handleClick } style={{ cursor: 'pointer' }} className='large'>
                         { this.props.name }
                       </h1>
-                      <a className='learn back' onClick={ this.handleClick }>Learn more.</a>
+                      <a className='learn back mobile-hidden' onClick={ this.handleClick }>Learn more.</a>
+                      <a className='mobile-visible'>Learn more.</a>
                     </Fragment>
                   }
                 </span>
