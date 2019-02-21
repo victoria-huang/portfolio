@@ -9,7 +9,7 @@ const Contact = (props) => {
         <h1 id='contact-header'>I would love to hear from you.</h1>
         <hr className='white-hr' style={{ width: '200px', marginBottom: '30px' }} />
 
-        <a href="mailto:vctrah@gmail.com">
+        <a href="mailto:hello@victoriahuang.me">
           <FaEnvelopeSquare size={ 50 } />
         </a>
 
