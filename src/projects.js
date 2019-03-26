@@ -1,5 +1,15 @@
 export const allProjects = [
   {
+    name: 'Sharesearch',
+    repo: 'https://github.com/victoria-huang/sharesearch',
+    url: null,
+    video: null,
+    image: 'https://s3.amazonaws.com/victoria-huang-portfolio/sharesearch.jpg',
+    tech: ['React', 'Redux', 'JavaScript', 'Rails', 'Ruby', 'ActionCable/Websockets'],
+    description: 'Social media platform for researchers to connect, plan projects, and stay up to date on current studies',
+    current: true
+  },
+  {
     name: 'Portfolio',
     repo: 'https://github.com/victoria-huang/portfolio',
     url: null,
@@ -15,7 +25,7 @@ export const allProjects = [
     url: null,
     video: 'https://youtu.be/I5FhDrszFVc',
     image: 'https://s3.amazonaws.com/victoria-huang-portfolio/yourx.jpg',
-    tech: ['React', 'JavaScript', 'Rails', 'Ruby', 'CSS', 'RxNav (NIH, NLM) APIs'],
+    tech: ['React', 'Redux', 'JavaScript', 'Rails', 'Ruby', 'CSS', 'RxNav (NIH, NLM) APIs'],
     description: 'Your virtual pillbox, designed to allow you to easily take control of your health.',
     current: false
   },
