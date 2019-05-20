@@ -1,11 +1,11 @@
-export const allProjects = [
+export const allProjects = [ 
   {
     name: 'Lexi',
     repo: 'https://github.com/victoria-huang/lexi',
     url: null,
     video: null,
     image: 'https://s3.amazonaws.com/victoria-huang-portfolio/lexi.jpg',
-    tech: ['React', 'Redux', 'JavaScript'],
+    tech: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'CSS'],
     description: 'An interactive Scrabble experience inspired by Words with Friends.',
     current: true
   },
