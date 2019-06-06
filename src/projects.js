@@ -2,10 +2,10 @@ export const allProjects = [
   {
     name: 'Lexi',
     repo: 'https://github.com/victoria-huang/lexi',
-    url: null,
+    url: 'https://lexi-con.herokuapp.com/',
     video: null,
     image: 'https://s3.amazonaws.com/victoria-huang-portfolio/lexi.jpg',
-    tech: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'CSS'],
+    tech: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'Socket.IO', 'CSS'],
     description: 'An interactive Scrabble experience inspired by Words with Friends.',
     current: true
   },
