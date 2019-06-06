@@ -16,7 +16,7 @@ const About = (props) => {
             <hr className='white-hr' />
 
             <p className='tech'>
-              JavaScript, React, React Native, Redux, Node.js, Express, Ruby, Rails, ActionCable, MongoDB, SQL, PostgreSQL, SQLite, HTML, CSS, Git
+              JavaScript, React, React Native, Redux, Node.js, Express, Ruby, Rails, ActionCable, Socket.IO, MongoDB, SQL, PostgreSQL, SQLite, HTML, CSS, Git
             </p>
           </div>
           <div className='column-right'>
