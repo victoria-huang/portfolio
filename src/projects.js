@@ -6,7 +6,7 @@ export const allProjects = [
     video: null,
     image: 'https://s3.amazonaws.com/victoria-huang-portfolio/lexi.jpg',
     tech: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'Socket.IO', 'CSS'],
-    description: 'An interactive Scrabble experience inspired by Words with Friends.<br/><br/>Experience with:<br/><br/>Player One<br/>username: lexicon<br/>password: password<br/><br/>Player Two<br/>username: vocabulary<br/>password: password',
+    description: 'An interactive Scrabble experience inspired by Words with Friends.<br/><br/>Experience with 2 players:<br/><div className="flex-center"><div className="player">username: lexicon<br/>password: password</div><div className="player">username: vocabulary<br/>password: password</div></div>',
     current: true
   },
   {

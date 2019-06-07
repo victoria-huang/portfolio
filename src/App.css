@@ -42,6 +42,21 @@ button:hover {
   border-width: 3px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin: 3px;
+}
+
 .emphasize {
   color: orange;
   letter-spacing: 2.5px;
