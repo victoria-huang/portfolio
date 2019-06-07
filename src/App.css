@@ -52,7 +52,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
   padding: 3px;
   margin: 3px;
 }
